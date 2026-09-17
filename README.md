@@ -57,8 +57,14 @@ field names are already usable as payload keys. No other file needs to change.
 
 ### Vercel
 
-Import the repo. `vercel.json` sets the framework, build command, output
-directory and security headers — no dashboard configuration needed.
+Import the repo and deploy — no dashboard configuration needed.
+
+`vercel.json` declares the framework and security headers only. It deliberately
+does **not** set `outputDirectory`: Vercel's Next.js builder detects
+`output: 'export'` from `next.config.mjs` and serves `out/` itself. Setting
+`outputDirectory: "out"` makes the builder treat `out` as the Next.js `distDir`
+and the deploy fails with `out/routes-manifest.json couldn't be found`.
+Routing (`trailingSlash`) also comes from `next.config.mjs`, not from here.
 
 ### Cloudflare Pages
 
