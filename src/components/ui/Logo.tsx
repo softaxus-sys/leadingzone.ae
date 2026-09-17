@@ -3,40 +3,18 @@ import { cn } from '@/lib/utils';
 import { site } from '@/content/site';
 
 /**
- * Wordmark + monogram. The mark is an "L" bracket enclosing a "Z" stroke,
- * sized on a 32px grid so it stays legible in the header and the footer.
+ * The LeadingZone wordmark.
+ *
+ * Two files rather than one with a CSS filter. The master logo is black type
+ * with a red mark; on the navy header and footer black is invisible, and the
+ * usual `brightness(0) invert(1)` trick would flatten the red away with it. The
+ * reversed file is recoloured per-pixel — black to white, red preserved — by
+ * `scripts/generate-brand-assets.mjs`.
+ *
+ * Both files are 900x160 (5.625:1). Widths below are that ratio applied to the
+ * chosen height, hard-coded so the box is reserved before the image decodes and
+ * the header never shifts on load.
  */
-export function LogoMark({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 32 32"
-      aria-hidden="true"
-      focusable="false"
-      className={cn('h-8 w-8', className)}
-    >
-      <rect
-        x="0.75"
-        y="0.75"
-        width="30.5"
-        height="30.5"
-        rx="3.25"
-        className="fill-navy-900"
-      />
-      {/* "Z" stroke */}
-      <path
-        d="M10 10h12l-9.5 12H22"
-        fill="none"
-        strokeWidth="2.4"
-        strokeLinecap="square"
-        strokeLinejoin="miter"
-        className="stroke-gold-500"
-      />
-      {/* "L" foot, offset to read as a bracket under the Z */}
-      <path d="M10 10v12" fill="none" strokeWidth="2.4" className="stroke-white/85" />
-    </svg>
-  );
-}
-
 export function Logo({
   onDark = false,
   className,
@@ -47,28 +25,62 @@ export function Logo({
   return (
     <Link
       href="/"
-      aria-label={`${site.name} — home`}
-      className={cn('group inline-flex items-center gap-3', className)}
+      aria-label={`${site.legalName} — home`}
+      className={cn('inline-flex shrink-0 items-center', className)}
     >
-      <LogoMark className="h-9 w-9 transition-transform duration-500 ease-premium group-hover:scale-[1.04]" />
-      <span className="flex flex-col leading-none">
-        <span
+      {/*
+        Both variants are stacked and cross-faded with opacity rather than
+        swapped through `src`, so the header's light/dark transition matches the
+        rest of the bar instead of flashing while the other file decodes.
+      */}
+      <span className="relative block h-8 w-[180px] lg:h-10 lg:w-[225px]">
+        <img
+          src="/brand/leadingzone-logo.png"
+          alt={site.legalName}
+          width={900}
+          height={160}
+          decoding="async"
+          fetchPriority="high"
           className={cn(
-            'font-display text-[19px] font-extrabold tracking-[-0.02em]',
-            onDark ? 'text-white' : 'text-navy-900',
+            'absolute inset-0 h-full w-full object-contain object-left transition-opacity duration-300 ease-premium',
+            onDark ? 'opacity-0' : 'opacity-100',
           )}
-        >
-          Leading<span className="text-gold-600">Zone</span>
-        </span>
-        <span
+        />
+        <img
+          src="/brand/leadingzone-logo-reversed.png"
+          alt=""
+          aria-hidden="true"
+          width={900}
+          height={160}
+          decoding="async"
+          fetchPriority="high"
           className={cn(
-            'mt-1 text-[9.5px] font-semibold uppercase tracking-[0.2em]',
-            onDark ? 'text-slate-400' : 'text-slateink-500',
+            'absolute inset-0 h-full w-full object-contain object-left transition-opacity duration-300 ease-premium',
+            onDark ? 'opacity-100' : 'opacity-0',
           )}
-        >
-          Consultancy
-        </span>
+        />
       </span>
+    </Link>
+  );
+}
+
+/** Footer lockup — always reversed, since the footer ground is always navy. */
+export function LogoFooter({ className }: { className?: string }) {
+  return (
+    <Link
+      href="/"
+      aria-label={`${site.legalName} — home`}
+      className={cn('inline-flex', className)}
+    >
+      <img
+        src="/brand/leadingzone-logo-reversed.png"
+        alt={site.legalName}
+        width={900}
+        height={160}
+        loading="lazy"
+        decoding="async"
+        className="h-11 w-[248px] object-contain object-left"
+      />
     </Link>
   );
 }

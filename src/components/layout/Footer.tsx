@@ -11,7 +11,7 @@ import {
   Youtube,
 } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
-import { LogoMark } from '@/components/ui/Logo';
+import { LogoFooter } from '@/components/ui/Logo';
 import { contact, footerNav, site, social } from '@/content/site';
 
 const socialLinks = [
@@ -35,12 +35,7 @@ export function Footer() {
         <div className="grid gap-12 py-16 lg:grid-cols-12 lg:gap-8 lg:py-20">
           {/* Brand + contact */}
           <div className="lg:col-span-4">
-            <Link href="/" className="inline-flex items-center gap-3" aria-label={`${site.name} — home`}>
-              <LogoMark className="h-10 w-10" />
-              <span className="font-display text-xl font-extrabold tracking-[-0.02em] text-white">
-                Leading<span className="text-gold-500">Zone</span>
-              </span>
-            </Link>
+            <LogoFooter />
 
             <p className="mt-6 max-w-sm text-[14.5px] leading-relaxed text-slate-400">
               A private business setup and corporate services consultancy helping

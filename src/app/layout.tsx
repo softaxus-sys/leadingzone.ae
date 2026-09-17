@@ -47,21 +47,28 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: `${site.name} — ${site.tagline}`,
     description: site.description,
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: `${site.legalName} — ${site.tagline}`,
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${site.name} — ${site.tagline}`,
     description: site.description,
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,
     follow: true,
   },
   icons: {
-    icon: [
-      { url: '/favicon.svg', type: 'image/svg+xml' },
-    ],
-    apple: '/favicon.svg',
+    icon: [{ url: '/favicon.png', type: 'image/png', sizes: '256x256' }],
+    apple: '/brand/leadingzone-mark.png',
   },
 };
 
@@ -88,6 +95,8 @@ const organizationSchema = {
     addressLocality: 'Dubai',
     addressCountry: 'AE',
   },
+  logo: `${site.url}/brand/leadingzone-logo.png`,
+  image: `${site.url}/og-image.png`,
   telephone: contact.phone,
   email: contact.email,
   sameAs: [social.facebook, social.instagram, social.youtube, social.linkedin].filter(

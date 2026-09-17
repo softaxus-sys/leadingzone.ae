@@ -173,6 +173,52 @@ Google.
 `prefers-reduced-motion: reduce`. Transitions elsewhere are short and use a
 single easing curve (`ease-premium`).
 
+### Brand assets
+
+The supplied master logo is black type with a red mountain mark, plus red
+"CONSULTANCY". Masters live in `brand-source/` — deliberately **not** in
+`public/`, because `public/` is copied verbatim into the static export and
+anything left there is published and served.
+
+`scripts/generate-brand-assets.mjs` derives everything the site uses:
+
+| File | Use |
+| --- | --- |
+| `public/brand/leadingzone-logo.png` | Header, once scrolled (white bar) |
+| `public/brand/leadingzone-logo-reversed.png` | Header over the hero, and the footer |
+| `public/brand/leadingzone-mark.png` | Apple touch icon; the "A" glyph on navy |
+| `public/favicon.png` | Browser tab icon |
+| `public/og-image.png` | Open Graph / Twitter card, 1200x630 |
+
+Run it only when the master logo changes; the outputs are committed, so a normal
+build never invokes it. It needs `sharp`, which is not a dependency of this
+project — it is present because Next.js pulls it in. If missing:
+`npm i -D sharp && node scripts/generate-brand-assets.mjs && npm un sharp`.
+
+#### Why there are two wordmark files
+
+Black type is invisible on the navy header and footer. The usual shortcut,
+`filter: brightness(0) invert(1)`, turns the whole logo white and discards the
+red — the only brand colour in the mark. The script instead recolours black to
+white per-pixel and leaves red intact, blending across anti-aliased edges so the
+boundary between the red mountain and the black letterform does not fringe.
+
+`Logo.tsx` stacks both files and cross-fades them with opacity rather than
+swapping `src`, so the header's light/dark transition matches the rest of the
+bar instead of flashing while the other file decodes.
+
+#### Open question: red vs gold
+
+The brand mark is red (`#FF0000`); the site's accent system is champagne gold.
+Both currently coexist — gold carries the UI (buttons, rules, eyebrows) and red
+appears only inside the logo. That reads as deliberate at small logo sizes, but
+it is two accent colours in one system.
+
+If you would rather the site match the logo, the palette is a single-file edit:
+change the `--lz-gold-*` tokens in `globals.css` to a red ramp. Consider using a
+slightly deeper red than pure `#FF0000` for large UI areas — pure red vibrates
+against navy and is hard to keep looking premium at scale.
+
 ### The skyline
 
 `components/ui/Skyline.tsx` is an inline SVG Dubai skyline — roughly 4KB, no
