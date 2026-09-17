@@ -59,12 +59,32 @@ field names are already usable as payload keys. No other file needs to change.
 
 Import the repo and deploy — no dashboard configuration needed.
 
-`vercel.json` declares the framework and security headers only. It deliberately
-does **not** set `outputDirectory`: Vercel's Next.js builder detects
-`output: 'export'` from `next.config.mjs` and serves `out/` itself. Setting
-`outputDirectory: "out"` makes the builder treat `out` as the Next.js `distDir`
-and the deploy fails with `out/routes-manifest.json couldn't be found`.
-Routing (`trailingSlash`) also comes from `next.config.mjs`, not from here.
+#### Why `outputDirectory` is pinned to `.next`
+
+`vercel.json` sets `"outputDirectory": ".next"`. That looks wrong for a project
+that exports to `out/`, but it is correct and deliberate.
+
+Vercel's Next.js builder reads build manifests (`routes-manifest.json` and
+friends) from the Next.js **`distDir`**, which is `.next`. It then detects
+`output: 'export'` from `next.config.mjs` and serves the exported `out/`
+directory on its own. `outputDirectory` names the *build* directory, not the
+directory that gets served.
+
+Pointing it at `out` — which is the intuitive but wrong reading — makes the
+builder hunt for `out/routes-manifest.json`, a file that never exists there,
+and the deploy fails after an otherwise successful build:
+
+```
+Error: The file "/vercel/path0/out/routes-manifest.json" couldn't be found.
+```
+
+It is pinned rather than omitted because `vercel.json` takes precedence over
+Project Settings in the Vercel dashboard. Leaving it unset lets a stale
+dashboard override (`Output Directory = out`) reintroduce the same failure,
+which is exactly what happened during the first deployment of this project.
+Pinning it makes the repo the single source of truth.
+
+Routing (`trailingSlash`) comes from `next.config.mjs`, not from here.
 
 ### Cloudflare Pages
 
