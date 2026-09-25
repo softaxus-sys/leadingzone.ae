@@ -83,7 +83,7 @@ export function Hero() {
             style={{ animationDelay: '320ms' }}
           >
             <p className="max-w-md text-[13.5px] leading-relaxed text-slate-400">
-              Mainland, free zone and offshore formation — plus the visas, banking,
+              Mainland, free zone and offshore formation, plus the visas, banking,
               Ejari and tax registrations that follow.
             </p>
           </div>

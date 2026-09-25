@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-/** How the firm works — stated as principles rather than claims. */
+/** How the firm works, stated as principles rather than claims. */
 const principles = [
   {
     title: 'Advice before paperwork',
@@ -34,7 +34,7 @@ const principles = [
   },
   {
     title: 'Clear scope, in writing',
-    body: 'What is included, what is not, and what the recurring costs will be — confirmed in writing before work begins.',
+    body: 'What is included, what is not, and what the recurring costs will be, confirmed in writing before work begins.',
   },
   {
     title: 'Knowing our limits',
@@ -67,7 +67,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About Us"
         title="A UAE Business Partner, Not a Licence Vendor"
-        lead="LeadingZone is a private business setup and corporate services consultancy. We help entrepreneurs and companies establish in the UAE — and stay compliant once they have."
+        lead="LeadingZone is a private business setup and corporate services consultancy. We help entrepreneurs and companies establish in the UAE and stay compliant once they have."
         crumbs={[{ label: 'About' }]}
       />
 
@@ -83,9 +83,9 @@ export default function AboutPage() {
               <p className="text-[16.5px] leading-relaxed text-slateink-700">
                 Setting up a company in the UAE is straightforward in outline and
                 detailed in practice. The outline is what most consultancies sell. The
-                detail — which activities your licence actually permits, what the bank
-                will want to see, how many visas your facility supports, what the
-                renewal costs in year two — is where businesses get caught out.
+                detail is where businesses get caught out: which activities your
+                licence actually permits, what the bank will want to see, how many
+                visas your facility supports, and what the renewal costs in year two.
               </p>
               <p className="text-[16.5px] leading-relaxed text-slateink-700">
                 LeadingZone exists to close that gap. We work through the specifics of

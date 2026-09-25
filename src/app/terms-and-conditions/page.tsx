@@ -29,7 +29,7 @@ export default function TermsPage() {
         over these terms in the event of a conflict.
       </p>
 
-      <h2>2. Our status — an independent consultancy</h2>
+      <h2>2. Our status: an independent consultancy</h2>
       <p>
         {site.legalName} is a private business setup and corporate services consultancy.
         We are <strong>not</strong>:

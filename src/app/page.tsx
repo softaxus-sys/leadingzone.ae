@@ -19,7 +19,7 @@ import { homeFaqs } from '@/content/home';
 import { site } from '@/content/site';
 
 export const metadata: Metadata = {
-  title: `${site.name} — ${site.tagline}`,
+  title: `${site.name} | ${site.tagline}`,
   description: site.description,
   alternates: { canonical: '/' },
 };
@@ -36,7 +36,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Our Services"
             title="Everything You Need to Establish and Operate in the UAE"
-            lead="Formation is the first step. The services that keep a UAE company running — visas, banking, tax registration, renewals — matter just as much, and we handle them under one roof."
+            lead="Formation is the first step. The services that keep a UAE company running, such as visas, banking, tax registration and renewals, matter just as much, and we handle them under one roof."
             className="lg:max-w-2xl"
           />
           <Reveal delay={120} className="shrink-0">
@@ -63,7 +63,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Common Questions"
               title="Questions We Hear Most"
-              lead="If yours is not here, ask us directly — we will give you a straight answer, including when the answer is that we are not the right fit."
+              lead="If yours is not here, ask us directly and we will give you a straight answer, including when the answer is that we are not the right fit."
             />
           </div>
           <div className="lg:col-span-7 lg:col-start-6">

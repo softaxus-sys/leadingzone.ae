@@ -13,7 +13,7 @@ import { cn } from '@/lib/utils';
  * hands it to the visitor's own mail client or WhatsApp. Nothing is posted
  * anywhere, and no data leaves the browser until the visitor sends it.
  *
- * ── To wire this to a real endpoint later ────────────────────────────────────
+ * To wire this to a real endpoint later:
  * Replace `handleSubmit` with a `fetch()` POST to a form service (Formspree,
  * Web3Forms, Basin) or a Vercel/Cloudflare function. The field names below are
  * already sensible payload keys. Everything else on the page stays as is.
@@ -22,8 +22,8 @@ import { cn } from '@/lib/utils';
 const budgets = [
   'Not sure yet',
   'Under AED 15,000',
-  'AED 15,000 – 30,000',
-  'AED 30,000 – 75,000',
+  'AED 15,000 to 30,000',
+  'AED 30,000 to 75,000',
   'Above AED 75,000',
 ];
 
@@ -60,22 +60,22 @@ export function ContactForm() {
   const summary = useMemo(
     () =>
       [
-        `Name: ${values.name || '—'}`,
-        `Email: ${values.email || '—'}`,
-        `Phone: ${values.phone || '—'}`,
-        `Country: ${values.country || '—'}`,
-        `Service of interest: ${values.service || '—'}`,
+        `Name: ${values.name || 'Not provided'}`,
+        `Email: ${values.email || 'Not provided'}`,
+        `Phone: ${values.phone || 'Not provided'}`,
+        `Country: ${values.country || 'Not provided'}`,
+        `Service of interest: ${values.service || 'Not provided'}`,
         `Indicative budget: ${values.budget}`,
         '',
         'Details:',
-        values.message || '—',
+        values.message || 'Not provided',
       ].join('\n'),
     [values],
   );
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const subject = `Consultation enquiry — ${values.service || 'UAE business setup'}`;
+    const subject = `Consultation enquiry: ${values.service || 'UAE business setup'}`;
     window.location.href = `${contact.emailHref}?subject=${encodeURIComponent(
       subject,
     )}&body=${encodeURIComponent(summary)}`;
@@ -233,7 +233,7 @@ export function ContactForm() {
       </div>
 
       <p className="pt-1 text-[12.5px] leading-relaxed text-slateink-500">
-        Submitting opens your own email client with the enquiry pre-filled — nothing is
+        Submitting opens your own email client with the enquiry pre-filled, and nothing is
         stored on this website. We usually reply within one business day. See our{' '}
         <a href="/privacy-policy/" className="font-medium text-navy-900 lz-link-underline">
           Privacy Policy

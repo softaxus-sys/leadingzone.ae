@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils';
  * Burj Al Arab) rather than literal reproductions.
  *
  * To swap in real photography later, replace the <DubaiSkyline /> usage in
- * `src/components/home/Hero.tsx` with a <picture>/<Image> element — the
+ * `src/components/home/Hero.tsx` with a <picture>/<Image> element; the
  * surrounding overlay and gradient stack is designed to work with either.
  */
 export function DubaiSkyline({ className }: { className?: string }) {
@@ -89,7 +89,7 @@ export function DubaiSkyline({ className }: { className?: string }) {
       {/* Horizon haze behind everything. */}
       <rect x="0" y="180" width="1600" height="340" fill="url(#lz-haze)" />
 
-      {/* Far layer — low-contrast background massing. */}
+      {/* Far layer: low-contrast background massing. */}
       <g fill="url(#lz-far)" opacity="0.5">
         <path d="M0 520V394h70v126Z" />
         <path d="M84 520V350h56v170Z" />

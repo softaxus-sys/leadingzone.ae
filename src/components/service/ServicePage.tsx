@@ -164,7 +164,7 @@ export function ServicePage({
           <div className="lg:col-span-4">
             <SectionHeading
               eyebrow="FAQs"
-              title={`${service.title} — Your Questions`}
+              title={`${service.title}: Your Questions`}
               lead="Straight answers, including the ones that are less convenient for us."
             />
           </div>
@@ -206,7 +206,7 @@ export function ServicePage({
 
       <CtaBand
         title="Talk Through Your Requirement"
-        lead="Tell us what you are planning and we will set out the route, the documents required and a realistic timeline — before you commit to anything."
+        lead="Tell us what you are planning and we will set out the route, the documents required and a realistic timeline, before you commit to anything."
       />
       <FaqSchema items={service.faqs} />
     </>

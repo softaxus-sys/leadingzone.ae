@@ -8,7 +8,7 @@ import { site } from '@/content/site';
  * Two files rather than one with a CSS filter. The master logo is black type
  * with a red mark; on the navy header and footer black is invisible, and the
  * usual `brightness(0) invert(1)` trick would flatten the red away with it. The
- * reversed file is recoloured per-pixel — black to white, red preserved — by
+ * reversed file is recoloured per-pixel (black to white, red preserved) by
  * `scripts/generate-brand-assets.mjs`.
  *
  * Both files are 900x160 (5.625:1). Widths below are that ratio applied to the
@@ -25,7 +25,7 @@ export function Logo({
   return (
     <Link
       href="/"
-      aria-label={`${site.legalName} — home`}
+      aria-label={`${site.legalName} home`}
       className={cn('inline-flex shrink-0 items-center', className)}
     >
       {/*
@@ -64,12 +64,12 @@ export function Logo({
   );
 }
 
-/** Footer lockup — always reversed, since the footer ground is always navy. */
+/** Footer lockup: always reversed, since the footer ground is always navy. */
 export function LogoFooter({ className }: { className?: string }) {
   return (
     <Link
       href="/"
-      aria-label={`${site.legalName} — home`}
+      aria-label={`${site.legalName} home`}
       className={cn('inline-flex', className)}
     >
       <img

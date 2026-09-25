@@ -14,7 +14,7 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 
-/** Trust strip immediately beneath the hero. Qualitative only — no invented figures. */
+/** Trust strip immediately beneath the hero. Qualitative only, no invented figures. */
 export const trustPoints: { icon: LucideIcon; label: string }[] = [
   { icon: MapPin, label: 'UAE Business Specialists' },
   { icon: LifeBuoy, label: 'End-to-End Support' },
@@ -68,7 +68,7 @@ export const structures: {
   },
 ];
 
-/** Why LeadingZone — qualitative differentiators, no superlatives. */
+/** Why LeadingZone: qualitative differentiators, no superlatives. */
 export const benefits: { icon: LucideIcon; title: string; body: string }[] = [
   {
     icon: MapPin,
@@ -83,12 +83,12 @@ export const benefits: { icon: LucideIcon; title: string; body: string }[] = [
   {
     icon: LifeBuoy,
     title: 'End-to-End Assistance',
-    body: 'Licence, establishment card, visas, Ejari, banking and tax registration handled as one coordinated sequence.',
+    body: 'Licence, establishment card, visas, banking and tax registration handled as one coordinated sequence.',
   },
   {
     icon: ClipboardList,
     title: 'A Clear Process',
-    body: 'You know what happens next, what we need from you, and what each stage depends on — set out before we begin.',
+    body: 'You know what happens next, what we need from you, and what each stage depends on, set out before we begin.',
   },
   {
     icon: ShieldCheck,
@@ -112,7 +112,7 @@ export const processSteps: {
   {
     number: '01',
     title: 'Consultation',
-    body: 'Understand your business, activities and goals — including what you plan to do in the first year, not just on day one.',
+    body: 'Understand your business, activities and goals, including what you plan to do in the first year, not just on day one.',
     icon: MessagesSquare,
   },
   {
@@ -130,12 +130,12 @@ export const processSteps: {
   {
     number: '04',
     title: 'Launch & Ongoing Support',
-    body: 'Help you move forward with visas, banking and tax registration — and keep renewals on track afterwards.',
+    body: 'Help you move forward with visas, banking and tax registration, and keep renewals on track afterwards.',
     icon: Rocket,
   },
 ];
 
-/** UAE focus section — emirate / jurisdiction coverage. */
+/** UAE focus section: emirate and jurisdiction coverage. */
 export const uaeLocations: { name: string; body: string }[] = [
   {
     name: 'Dubai',
@@ -198,7 +198,7 @@ export const homeFaqs: { q: string; a: string }[] = [
   },
   {
     q: 'Can you help if I am not yet in the UAE?',
-    a: 'Yes. A significant part of the process can be progressed remotely, and we tell you upfront which steps require you to be present — typically the bank appointment, medical and Emirates ID biometrics. Many clients complete those in one visit.',
+    a: 'Yes. A significant part of the process can be progressed remotely, and we tell you upfront which steps require you to be present, typically the bank appointment, medical and Emirates ID biometrics. Many clients complete those in one visit.',
   },
   {
     q: 'What does a UAE company setup cost?',
@@ -206,7 +206,7 @@ export const homeFaqs: { q: string; a: string }[] = [
   },
   {
     q: 'Do you support the company after it is formed?',
-    a: 'Yes — that is the larger part of what we do. Licence renewals, visa processing and renewals, Ejari, VAT and Corporate Tax registration, amendments and general PRO work all continue after launch.',
+    a: 'Yes, that is the larger part of what we do. Licence renewals, visa processing and renewals, VAT and Corporate Tax registration, amendments and general PRO work all continue after launch.',
   },
   {
     q: 'Is LeadingZone a government authority?',

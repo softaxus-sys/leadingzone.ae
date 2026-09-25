@@ -4,7 +4,6 @@ import {
   Calculator,
   FileCheck2,
   Globe2,
-  KeyRound,
   Landmark,
   Plane,
   Receipt,
@@ -48,10 +47,10 @@ export const services: Service[] = [
       'A mainland licence gives your company broad access to the UAE market and the flexibility to trade, tender and operate across the Emirates. We help you choose the structure, activities and licensing route that fit what you actually plan to do.',
     metaTitle: 'Mainland Company Formation in Dubai & UAE',
     metaDescription:
-      'Mainland company formation support in Dubai and across the UAE — structure selection, business activities, licensing and documentation guidance from LeadingZone.',
+      'Mainland company formation support in Dubai and across the UAE, covering structure selection, business activities, licensing and documentation guidance from LeadingZone.',
     intro: [
       'A UAE mainland company is licensed by the relevant emirate’s economic department and is generally the route chosen by businesses that want to serve the local market directly, work with government entities, or open offices and branches across the country.',
-      'The right setup depends on your planned activities, shareholding, office requirements and visa needs. We work through those details with you first, so the licence you end up with matches the business you intend to run — not a generic package.',
+      'The right setup depends on your planned activities, shareholding, office requirements and visa needs. We work through those details with you first, so the licence you end up with matches the business you intend to run, not a generic package.',
     ],
     highlights: [
       {
@@ -97,7 +96,7 @@ export const services: Service[] = [
     faqs: [
       {
         q: 'What is the difference between mainland and free zone?',
-        a: 'Broadly, a mainland licence is issued by an emirate’s economic department and is typically chosen for direct access to the UAE market, while a free zone licence is issued by a specific free zone authority and suits businesses whose activities sit naturally within that zone’s ecosystem. The right choice depends on your activities, clients and operating model — we walk you through both.',
+        a: 'Broadly, a mainland licence is issued by an emirate’s economic department and is typically chosen for direct access to the UAE market, while a free zone licence is issued by a specific free zone authority and suits businesses whose activities sit naturally within that zone’s ecosystem. The right choice depends on your activities, clients and operating model, and we walk you through both.',
       },
       {
         q: 'Do I need a local partner for a mainland company?',
@@ -127,9 +126,9 @@ export const services: Service[] = [
       'The UAE has dozens of free zones, each with its own activity list, facilities, visa allocation and cost base. We help you shortlist the zones that genuinely suit your business rather than the one with the loudest marketing.',
     metaTitle: 'Free Zone Company Setup in Dubai & the UAE',
     metaDescription:
-      'Free zone company formation guidance across UAE jurisdictions — zone selection, licence types, visa allocation and documentation support from LeadingZone.',
+      'Free zone company formation guidance across UAE jurisdictions, covering zone selection, licence types, visa allocation and documentation support from LeadingZone.',
     intro: [
-      'Free zones are designated jurisdictions with their own registration authority and rules. Many are built around a sector — trade and logistics, media, technology, healthcare, commodities, education — and the fit between your activity and the zone matters more than the headline package price.',
+      'Free zones are designated jurisdictions with their own registration authority and rules. Many are built around a sector, such as trade and logistics, media, technology, healthcare, commodities or education, and the fit between your activity and the zone matters more than the headline package price.',
       'We compare the zones that are realistic for your activities on the factors that actually affect you: permitted activities, facility and desk options, visa allocation, renewal costs, banking reputation and how the zone is viewed by the counterparties you will be dealing with.',
     ],
     highlights: [
@@ -203,13 +202,13 @@ export const services: Service[] = [
     eyebrow: 'Business Setup',
     heroTitle: 'Offshore Company Setup',
     heroLead:
-      'Offshore structures serve a specific purpose — typically international holding, asset ownership or cross-border trade rather than local UAE operations. We help you understand whether an offshore entity is genuinely appropriate before you commit.',
+      'Offshore structures serve a specific purpose, typically international holding, asset ownership or cross-border trade rather than local UAE operations. We help you understand whether an offshore entity is genuinely appropriate before you commit.',
     metaTitle: 'Offshore Company Setup in the UAE',
     metaDescription:
-      'Offshore company incorporation support for international structures — suitability assessment, documentation and registered agent coordination from LeadingZone.',
+      'Offshore company incorporation support for international structures, covering suitability assessment, documentation and registered agent coordination from LeadingZone.',
     intro: [
       'An offshore company is an international business structure registered in a jurisdiction that permits it, usually without the right to conduct business locally or to sponsor residence visas. It is a legitimate and common vehicle for holding, but it is not a substitute for a trading licence.',
-      'We are direct about this: offshore is the right answer far less often than it is sold. Where it does fit — international holding, group structuring, ownership of qualifying assets — we handle the incorporation carefully and explain the substance, banking and reporting realities up front.',
+      'We are direct about this: offshore is the right answer far less often than it is sold. Where it does fit, for international holding, group structuring or ownership of qualifying assets, we handle the incorporation carefully and explain the substance, banking and reporting realities up front.',
     ],
     highlights: [
       {
@@ -282,12 +281,12 @@ export const services: Service[] = [
     eyebrow: 'Corporate Services',
     heroTitle: 'PRO Services & Government Liaison',
     heroLead:
-      'Licence renewals, amendments, attestations, labour and immigration paperwork — the recurring administration that keeps a UAE company in good standing. We handle it so your team can stay focused on the business.',
+      'Licence renewals, amendments, attestations, labour and immigration paperwork: the recurring administration that keeps a UAE company in good standing. We handle it so your team can stay focused on the business.',
     metaTitle: 'PRO Services in Dubai & the UAE',
     metaDescription:
-      'Public Relations Officer (PRO) services in the UAE — licence renewals, amendments, document attestation, labour and immigration processing support from LeadingZone.',
+      'Public Relations Officer (PRO) services in the UAE, covering licence renewals, amendments, document attestation, labour and immigration processing support from LeadingZone.',
     intro: [
-      'PRO work is the day-to-day interface between a company and the government departments it depends on. It is rarely complicated in isolation, but it is procedural, deadline-driven and unforgiving of small errors — a mismatched name, an expired attestation, a missed renewal window.',
+      'PRO work is the day-to-day interface between a company and the government departments it depends on. It is rarely complicated in isolation, but it is procedural, deadline-driven and unforgiving of small errors: a mismatched name, an expired attestation, a missed renewal window.',
       'We act as an extension of your admin function: tracking what is due, preparing documents correctly the first time, and dealing with the counters and portals on your behalf.',
     ],
     highlights: [
@@ -334,7 +333,7 @@ export const services: Service[] = [
     faqs: [
       {
         q: 'Do I need PRO services if my company is small?',
-        a: 'Not necessarily — but many small companies find the recurring administration disproportionately time-consuming. PRO support can be engaged for specific tasks rather than a full retainer if that suits you better.',
+        a: 'Not necessarily, but many small companies find the recurring administration disproportionately time-consuming. PRO support can be engaged for specific tasks rather than a full retainer if that suits you better.',
       },
       {
         q: 'Can you handle renewals for a company you did not set up?',
@@ -342,14 +341,14 @@ export const services: Service[] = [
       },
       {
         q: 'What is document attestation?',
-        a: 'Attestation is the process of having documents — degrees, marriage certificates, company papers — verified so they are accepted by UAE authorities. Requirements vary by document type and country of origin, and we coordinate the steps for you.',
+        a: 'Attestation is the process of having documents, such as degrees, marriage certificates and company papers, verified so they are accepted by UAE authorities. Requirements vary by document type and country of origin, and we coordinate the steps for you.',
       },
       {
         q: 'Do you handle labour contracts and WPS?',
         a: 'We support the documentation and processing around employment files. For specialist payroll or legal advice we will tell you where a qualified specialist should be involved.',
       },
     ],
-    related: ['immigration-services', 'virtual-ejari', 'company-formation'],
+    related: ['immigration-services', 'vat-registration', 'company-formation'],
   },
   {
     slug: 'vat-registration',
@@ -363,9 +362,9 @@ export const services: Service[] = [
       'Understand whether your business needs to register for VAT, get registered correctly, and keep filings and records in order once you are.',
     metaTitle: 'VAT Registration Services in the UAE',
     metaDescription:
-      'UAE VAT registration and compliance support — threshold assessment, Federal Tax Authority registration, invoicing and return filing guidance from LeadingZone.',
+      'UAE VAT registration and compliance support, covering threshold assessment, Federal Tax Authority registration, invoicing and return filing guidance from LeadingZone.',
     intro: [
-      'VAT applies to most goods and services supplied in the UAE. Registration is mandatory once taxable supplies pass the prescribed threshold, and voluntary registration is available below it — which is sometimes advantageous and sometimes not.',
+      'VAT applies to most goods and services supplied in the UAE. Registration is mandatory once taxable supplies pass the prescribed threshold, and voluntary registration is available below it, which is sometimes advantageous and sometimes not.',
       'We assess your position, handle the registration, and make sure you understand the practical obligations that follow: how to invoice, what records to keep, and when returns fall due.',
     ],
     highlights: [
@@ -441,7 +440,7 @@ export const services: Service[] = [
       'Corporate Tax changed what UAE businesses need to track, document and file. We help you register, understand how the rules apply to your structure, and keep your filing obligations on schedule.',
     metaTitle: 'UAE Corporate Tax Registration & Compliance',
     metaDescription:
-      'Corporate Tax support in the UAE — registration, applicability review, record-keeping, free zone considerations and return filing guidance from LeadingZone.',
+      'Corporate Tax support in the UAE, covering registration, applicability review, record-keeping, free zone considerations and return filing guidance from LeadingZone.',
     intro: [
       'The UAE Corporate Tax regime applies to businesses within its scope and brings registration, record-keeping and annual filing obligations. How it affects you depends on your structure, your revenue, and in some cases whether your entity qualifies for particular free zone treatment.',
       'We help you get registered correctly and understand your position clearly. Where a question calls for formal tax advice on a complex structure, we will say so and work alongside a qualified tax adviser rather than guessing.',
@@ -520,9 +519,9 @@ export const services: Service[] = [
       'UAE banks apply thorough onboarding and compliance checks. We help you prepare a credible application, understand what each bank looks for, and avoid the delays that come from an incomplete file.',
     metaTitle: 'UAE Corporate Bank Account Opening Assistance',
     metaDescription:
-      'Support with UAE corporate bank account applications — documentation preparation, bank selection guidance and onboarding coordination from LeadingZone.',
+      'Support with UAE corporate bank account applications, covering documentation preparation, bank selection guidance and onboarding coordination from LeadingZone.',
     intro: [
-      'Opening a corporate account in the UAE is a compliance exercise as much as a commercial one. Banks want to understand your business model, your counterparties, your expected flows and the background of the people behind the company — and they want it evidenced.',
+      'Opening a corporate account in the UAE is a compliance exercise as much as a commercial one. Banks want to understand your business model, your counterparties, your expected flows and the background of the people behind the company, and they want it evidenced.',
       'We help you assemble that picture properly. That means realistic bank selection for your profile, a complete document pack, and a clear business rationale that answers the questions a compliance team will ask.',
     ],
     highlights: [
@@ -536,7 +535,7 @@ export const services: Service[] = [
       },
       {
         title: 'Honest expectations',
-        body: 'No guarantees of approval — that decision rests with the bank. We tell you where your file is weak.',
+        body: 'No guarantees of approval: that decision rests with the bank. We tell you where your file is weak.',
       },
     ],
     includes: [
@@ -598,10 +597,10 @@ export const services: Service[] = [
       'From the founder’s first residence visa through to employee onboarding and family sponsorship, we manage the documentation and processing that residency in the UAE involves.',
     metaTitle: 'UAE Visa & Immigration Services',
     metaDescription:
-      'UAE residence visa and immigration support — investor and employment visas, medical and Emirates ID coordination, family sponsorship and renewals from LeadingZone.',
+      'UAE residence visa and immigration support, covering investor and employment visas, medical and Emirates ID coordination, family sponsorship and renewals from LeadingZone.',
     intro: [
       'A UAE residence visa is issued through a sponsoring entity and involves a sequence of steps: entry permit, status change where applicable, medical testing, Emirates ID registration and visa stamping. Each step has its own documentation and timing.',
-      'We coordinate the sequence end to end for founders, staff and dependants — and we keep track of expiries so renewals are handled before they become urgent.',
+      'We coordinate the sequence end to end for founders, staff and dependants, and we keep track of expiries so renewals are handled before they become urgent.',
     ],
     highlights: [
       {
@@ -660,85 +659,6 @@ export const services: Service[] = [
       {
         q: 'What happens if a visa expires?',
         a: 'Overstaying can carry fines and complicate future applications. We track expiries for clients under our care and flag renewals well in advance.',
-      },
-    ],
-    related: ['pro-services', 'virtual-ejari', 'company-formation'],
-  },
-  {
-    slug: 'virtual-ejari',
-    group: 'corporate',
-    icon: KeyRound,
-    title: 'Virtual Ejari',
-    cardSummary:
-      'Assistance with Virtual Ejari requirements for eligible business setups.',
-    eyebrow: 'Corporate Services',
-    heroTitle: 'Virtual Ejari Assistance',
-    heroLead:
-      'Ejari is Dubai’s tenancy registration system, and a registered tenancy contract underpins a number of licensing and visa processes. We help eligible businesses meet the requirement correctly.',
-    metaTitle: 'Virtual Ejari Services in Dubai',
-    metaDescription:
-      'Virtual Ejari registration assistance in Dubai — eligibility guidance, documentation and registration support for business setups from LeadingZone.',
-    intro: [
-      'Ejari registers tenancy contracts in Dubai and produces the certificate that other processes rely on — trade licence issuance and renewal, visa quota, and various government applications among them.',
-      'Virtual Ejari arrangements are available for certain setups where a conventional leased premises is not required. Eligibility is specific, so we confirm whether your licence type and activity qualify before proceeding, and set out the alternative if they do not.',
-    ],
-    highlights: [
-      {
-        title: 'Eligibility confirmed first',
-        body: 'We check that your licence type and activity qualify before any application is made.',
-      },
-      {
-        title: 'Supports licensing',
-        body: 'A registered tenancy record is required for a number of licensing and renewal steps.',
-      },
-      {
-        title: 'Documentation handled',
-        body: 'Contract preparation and registration coordinated on your behalf.',
-      },
-    ],
-    includes: [
-      'Eligibility assessment for your licence type and activity',
-      'Guidance on Ejari documentation requirements',
-      'Tenancy contract preparation and review support',
-      'Ejari registration submission and certificate issuance',
-      'Renewal reminders and re-registration support',
-      'Coordination with licensing and visa processes',
-      'Advice on alternatives where Virtual Ejari does not apply',
-    ],
-    steps: [
-      {
-        title: 'Eligibility check',
-        body: 'We confirm whether your setup qualifies and what documentation is required.',
-      },
-      {
-        title: 'Contract preparation',
-        body: 'The tenancy documentation is prepared and reviewed for accuracy.',
-      },
-      {
-        title: 'Registration',
-        body: 'We submit the registration and follow it through to certificate issuance.',
-      },
-      {
-        title: 'Renewal tracking',
-        body: 'We track the expiry so re-registration aligns with your licence renewal.',
-      },
-    ],
-    faqs: [
-      {
-        q: 'What is Ejari?',
-        a: 'Ejari is the system used in Dubai to register tenancy contracts. Registration produces a certificate that is required for a range of government and licensing processes.',
-      },
-      {
-        q: 'Who is eligible for Virtual Ejari?',
-        a: 'Eligibility depends on your licence type, activity and jurisdiction, and the rules are set by the relevant authority. We confirm your position before starting rather than assuming it applies.',
-      },
-      {
-        q: 'Does Ejari affect my visa quota?',
-        a: 'Registered premises are one of the factors that influence visa allocation for mainland companies. We explain how your arrangement affects quota in your specific case.',
-      },
-      {
-        q: 'Does Ejari need to be renewed?',
-        a: 'Yes — registration is tied to the tenancy period and needs to be renewed alongside it. We track the date and remind you in advance.',
       },
     ],
     related: ['pro-services', 'company-formation', 'immigration-services'],

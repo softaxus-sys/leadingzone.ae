@@ -88,7 +88,7 @@ export function Header() {
           : 'border-b border-white/[0.08] bg-transparent',
       )}
     >
-      {/* Utility bar — collapses on scroll to reclaim vertical space. */}
+      {/* Utility bar: collapses on scroll to reclaim vertical space. */}
       <div
         className={cn(
           'hidden overflow-hidden border-b border-white/10 transition-[max-height,opacity] duration-300 ease-premium lg:block',

@@ -3,7 +3,7 @@ import { Reveal } from '@/components/ui/Reveal';
 import { trustPoints } from '@/content/home';
 
 /**
- * Qualitative trust indicators. Deliberately no numbers — nothing here is a
+ * Qualitative trust indicators. Deliberately no numbers; nothing here is a
  * claim we cannot stand behind.
  */
 export function TrustStrip() {

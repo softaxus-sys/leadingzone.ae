@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const consultationFaqs = [
   {
     q: 'What happens in the free consultation?',
-    a: 'We ask about your business activities, where your customers are, how many visas you expect to need and your budget. You leave with a view on which jurisdiction fits, what the process involves and an indicative cost — including the recurring renewal cost, which is the part most often left out.',
+    a: 'We ask about your business activities, where your customers are, how many visas you expect to need and your budget. You leave with a view on which jurisdiction fits, what the process involves and an indicative cost, including the recurring renewal cost, which is the part most often left out.',
   },
   {
     q: 'How long does it take?',
@@ -36,7 +36,7 @@ const consultationFaqs = [
   },
   {
     q: 'Can we speak if I am outside the UAE?',
-    a: 'Yes — a large share of our consultations are with founders abroad. We schedule around your time zone and follow up in writing so nothing depends on catching each other live.',
+    a: 'Yes, a large share of our consultations are with founders abroad. We schedule around your time zone and follow up in writing so nothing depends on catching each other live.',
   },
 ];
 
@@ -73,7 +73,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Book a Free Consultation"
-        lead="Tell us what you are planning and we will come back with the route, the requirements and a realistic cost — usually within one business day."
+        lead="Tell us what you are planning and we will come back with the route, the requirements and a realistic cost, usually within one business day."
         crumbs={[{ label: 'Contact' }]}
       />
 
@@ -167,7 +167,7 @@ export default function ContactPage() {
             <SectionHeading
               eyebrow="Before You Call"
               title="What to Expect"
-              lead="A short, practical conversation — not a sales pitch with a countdown timer on it."
+              lead="A short, practical conversation, not a sales pitch with a countdown timer on it."
             />
           </div>
           <div className="lg:col-span-7 lg:col-start-6">

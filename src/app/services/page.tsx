@@ -10,7 +10,7 @@ import { corporateServices, setupServices } from '@/content/services';
 export const metadata: Metadata = {
   title: 'UAE Business Setup & Corporate Services',
   description:
-    'Company formation, PRO services, VAT and Corporate Tax registration, corporate banking assistance, visas and Virtual Ejari — the full range of LeadingZone services in the UAE.',
+    'Company formation, PRO services, VAT and Corporate Tax registration, corporate banking assistance and visas: the full range of LeadingZone services in the UAE.',
   alternates: { canonical: '/services' },
   openGraph: {
     title: 'UAE Business Setup & Corporate Services | LeadingZone',

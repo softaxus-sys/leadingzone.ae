@@ -8,7 +8,7 @@ import { structures } from '@/content/home';
 
 /**
  * The three jurisdiction routes. Presented as a comparison rather than a sales
- * pitch — each panel states what it is genuinely suited to.
+ * pitch; each panel states what it is genuinely suited to.
  */
 export function Structures() {
   return (
@@ -87,7 +87,7 @@ export function Structures() {
             Ownership rules, permitted activities and visa allocations are set by the
             relevant authorities and change from time to time. We confirm the current
             position for your specific activity rather than relying on general
-            guidance — and we do not make legal or regulatory guarantees.
+            guidance, and we do not make legal or regulatory guarantees.
           </p>
         </Reveal>
       </div>

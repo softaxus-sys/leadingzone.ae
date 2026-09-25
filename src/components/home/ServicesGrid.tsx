@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 
 /**
  * Service card. The whole card is the link target; the arrow is decorative.
- * Hover lifts the card a single pixel and warms the border — nothing louder.
+ * Hover lifts the card a single pixel and warms the border, nothing louder.
  */
 export function ServiceCard({
   service,

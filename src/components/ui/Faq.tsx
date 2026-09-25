@@ -61,8 +61,8 @@ export function Faq({
 
             {/*
               Collapse via grid-template-rows so the panel can animate to its
-              natural height. The `hidden` attribute cannot be used here — a
-              Tailwind display utility would override it — so the closed panel
+              natural height. The `hidden` attribute cannot be used here, since a
+              Tailwind display utility would override it, so the closed panel
               is marked `inert` instead, which keeps it out of the a11y tree
               and out of the tab order.
             */}
@@ -88,7 +88,7 @@ export function Faq({
   );
 }
 
-/** JSON-LD for an FAQ block — improves how the questions surface in search. */
+/** JSON-LD for an FAQ block, improves how the questions surface in search. */
 export function FaqSchema({ items }: { items: FaqItem[] }) {
   const schema = {
     '@context': 'https://schema.org',

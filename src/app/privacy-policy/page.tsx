@@ -49,7 +49,7 @@ export default function PrivacyPolicyPage() {
       </ul>
       <p>
         If you go on to engage us, we will separately collect the documentation
-        required to progress your application — which may include identity documents,
+        required to progress your application, which may include identity documents,
         proof of address and corporate records. That information is handled under the
         engagement terms agreed with you.
       </p>
@@ -102,7 +102,7 @@ export default function PrivacyPolicyPage() {
           similar providers engaged to complete a specific step
         </li>
         <li>
-          Professional advisers — for example a lawyer, auditor or licensed tax agent —
+          Professional advisers, for example a lawyer, auditor or licensed tax agent,
           where you have asked us to work alongside them
         </li>
         <li>

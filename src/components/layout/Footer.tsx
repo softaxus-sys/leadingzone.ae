@@ -109,7 +109,7 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Disclosure — keeps the consultancy/authority distinction explicit. */}
+        {/* Disclosure: keeps the consultancy/authority distinction explicit. */}
         <div className="border-t border-white/[0.08] py-7">
           <p className="max-w-4xl text-[12.5px] leading-relaxed text-slate-500">
             {site.legalName} is an independent private consultancy providing business

@@ -5,7 +5,7 @@ import { internationalMarkets, internationalPoints } from '@/content/home';
 
 /**
  * International client section. The market list describes who we regularly work
- * with — it is not a claim about volume or office presence.
+ * with; it is not a claim about volume or office presence.
  */
 export function International() {
   return (
@@ -15,7 +15,7 @@ export function International() {
           <SectionHeading
             eyebrow="International Clients"
             title="Setting Up From Outside the UAE"
-            lead="A large share of our clients start the process from another country. That changes the sequencing — what can be done remotely, what needs attesting at home, and which steps need you on the ground."
+            lead="A large share of our clients start the process from another country. That changes the sequencing: what can be done remotely, what needs attesting at home, and which steps need you on the ground."
           />
 
           <Reveal delay={140} className="mt-10">

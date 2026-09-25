@@ -9,7 +9,7 @@
    Rebrand the site by editing this block alone.
    ========================================================================== */
 :root {
-  /* Primary — deep navy / near-black */
+  /* Primary: deep navy / near-black */
   --lz-navy-950: 5 11 20;
   --lz-navy-900: 10 20 36;
   --lz-navy-800: 17 32 56;
@@ -17,7 +17,7 @@
   --lz-navy-600: 39 64 95;
   --lz-navy-500: 61 90 124;
 
-  /* Secondary — warm champagne gold (accent only, never dominant) */
+  /* Secondary: warm champagne gold (accent only, never dominant) */
   --lz-gold-700: 138 106 48;
   --lz-gold-600: 168 133 62;
   --lz-gold-500: 200 169 106;
@@ -98,7 +98,7 @@
     @apply inline-flex items-center gap-2.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-gold-700;
   }
 
-  /* Hairline rule with a gold centre — a recurring motif. */
+  /* Hairline rule with a gold centre, a recurring motif. */
   .lz-rule {
     @apply h-px w-full bg-gold-line;
   }
@@ -109,7 +109,7 @@
 }
 
 @layer utilities {
-  /* Fine noise/grain overlay — keeps large dark fields from banding. */
+  /* Fine noise/grain overlay, keeps large dark fields from banding. */
   .lz-grain::after {
     content: '';
     position: absolute;

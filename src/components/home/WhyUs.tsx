@@ -11,7 +11,7 @@ export function WhyUs() {
           <SectionHeading
             eyebrow="Why LeadingZone"
             title="Business Setup Without the Guesswork"
-            lead="Most of the friction in setting up a UAE company comes from not knowing what you do not know — which approvals depend on which, what a bank will actually ask for, what a licence costs to renew. We remove that uncertainty."
+            lead="Most of the friction in setting up a UAE company comes from not knowing what you do not know: which approvals depend on which, what a bank will actually ask for, what a licence costs to renew. We remove that uncertainty."
           />
 
           <Reveal delay={140} className="mt-10 border-l-2 border-gold-500 pl-6">

@@ -27,7 +27,7 @@ export function UaeFocus() {
             onDark
             eyebrow="UAE Focus"
             title="Your Gateway to the UAE"
-            lead="The UAE remains one of the most accessible places in the world to incorporate — but accessible is not the same as simple. Jurisdictions differ, requirements shift, and the right answer depends on specifics."
+            lead="The UAE remains one of the most accessible places in the world to incorporate, but accessible is not the same as simple. Jurisdictions differ, requirements shift, and the right answer depends on specifics."
           />
 
           <Reveal delay={140} className="mt-9">
