@@ -130,7 +130,7 @@ export default function AboutPage() {
                   className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[radial-gradient(circle,rgb(255_0_8/0.18)_0%,transparent_65%)]"
                 />
                 <div className="relative p-8 pb-32">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-gold-400">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/70">
                     Our position
                   </p>
                   <p className="mt-6 font-display text-[22px] leading-snug text-white">

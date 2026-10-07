@@ -11,7 +11,7 @@ export function Hero() {
       {/* Base wash: cool navy with a warm bias toward the horizon. */}
       <div
         aria-hidden
-        className="absolute inset-0 -z-30 bg-[radial-gradient(120%_85%_at_72%_88%,rgb(230_0_8)_0%,rgb(180_0_6)_42%,rgb(120_0_4)_100%)]"
+        className="absolute inset-0 -z-30 bg-[radial-gradient(120%_85%_at_72%_88%,rgb(240_0_8)_0%,rgb(205_0_7)_46%,rgb(150_0_5)_100%)]"
       />
 
       {/* Skyline sits on the lower third, faded at the top edge. */}
@@ -31,7 +31,7 @@ export function Hero() {
       {/* Readability scrim behind the copy only, so the skyline stays visible. */}
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgb(110_0_4/0.85)_0%,rgb(110_0_4/0.55)_44%,transparent_78%)]"
+        className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgb(110_0_4/0.55)_0%,rgb(110_0_4/0.25)_44%,transparent_78%)]"
       />
 
       {/* ── Content ────────────────────────────────────────────────────────── */}

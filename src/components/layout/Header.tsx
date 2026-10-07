@@ -84,25 +84,25 @@ export function Header() {
       className={cn(
         'fixed inset-x-0 top-0 z-50 transition-all duration-300 ease-premium',
         solid
-          ? 'border-b border-slateink-200/80 bg-white/[0.94] shadow-[0_1px_20px_-8px_rgb(10_10_10_/_0.18)] backdrop-blur-xl'
+          ? 'border-b border-slateink-200/80 bg-white shadow-[0_1px_20px_-8px_rgb(10_10_10_/_0.18)] backdrop-blur-xl'
           : 'border-b border-white/[0.08] bg-transparent',
       )}
     >
       {/* Utility bar: collapses on scroll to reclaim vertical space. */}
       <div
         className={cn(
-          'hidden overflow-hidden border-b border-white/10 transition-[max-height,opacity] duration-300 ease-premium lg:block',
+          'hidden overflow-hidden border-b border-slateink-200 bg-sand-100 transition-[max-height,opacity] duration-300 ease-premium lg:block',
           scrolled ? 'max-h-0 opacity-0' : 'max-h-10 opacity-100',
         )}
       >
         <Container className="flex h-10 items-center justify-between text-[12.5px]">
-          <p className="text-slate-400">
+          <p className="text-slateink-700">
             Business setup &amp; corporate services in the UAE
           </p>
           <div className="flex items-center gap-6">
             <a
               href={contact.phoneHref}
-              className="inline-flex items-center gap-2 text-slate-300 transition-colors hover:text-gold-400"
+              className="inline-flex items-center gap-2 font-medium text-navy-900 transition-colors hover:text-gold-600"
             >
               <Phone className="h-3.5 w-3.5" strokeWidth={2} />
               {contact.phone}
@@ -111,7 +111,7 @@ export function Header() {
               href={contact.whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-slate-300 transition-colors hover:text-gold-400"
+              className="inline-flex items-center gap-2 font-medium text-navy-900 transition-colors hover:text-gold-600"
             >
               <MessageCircle className="h-3.5 w-3.5" strokeWidth={2} />
               WhatsApp

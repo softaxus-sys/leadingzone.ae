@@ -27,7 +27,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative overflow-hidden bg-navy-950 text-slate-400">
+    <footer className="relative overflow-hidden bg-navy-950 text-white/75">
       {/* Gold hairline across the top edge. */}
       <div aria-hidden className="h-px w-full bg-gold-line" />
 
@@ -37,7 +37,7 @@ export function Footer() {
           <div className="lg:col-span-4">
             <LogoFooter />
 
-            <p className="mt-6 max-w-sm text-[14.5px] leading-relaxed text-slate-400">
+            <p className="mt-6 max-w-sm text-[14.5px] leading-relaxed text-white/75">
               A private business setup and corporate services consultancy helping
               entrepreneurs and companies establish and operate in the United Arab
               Emirates.
@@ -92,7 +92,7 @@ export function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={label}
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-sm border border-white/[0.12] text-slate-400 transition-all duration-300 ease-premium hover:border-gold-500/50 hover:text-gold-400"
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-sm border border-white/[0.12] text-white/75 transition-all duration-300 ease-premium hover:border-white/50 hover:text-white"
                   >
                     <Icon className="h-4 w-4" strokeWidth={1.8} />
                   </a>
@@ -111,7 +111,7 @@ export function Footer() {
 
         {/* Disclosure: keeps the consultancy/authority distinction explicit. */}
         <div className="border-t border-white/[0.08] py-7">
-          <p className="max-w-4xl text-[12.5px] leading-relaxed text-slate-500">
+          <p className="max-w-4xl text-[12.5px] leading-relaxed text-white/60">
             {site.legalName} is an independent private consultancy providing business
             setup and corporate support services. We are not a government authority,
             free zone authority, bank, law firm or licensed tax agent, and we do not
@@ -149,7 +149,7 @@ function FooterColumn({
 }) {
   return (
     <div>
-      <h3 className="text-[11px] font-semibold uppercase tracking-[0.18em] text-gold-500">
+      <h3 className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white">
         {title}
       </h3>
       <ul className="mt-5 space-y-3">
@@ -157,7 +157,7 @@ function FooterColumn({
           <li key={link.href}>
             <Link
               href={link.href}
-              className="group inline-flex items-center gap-1.5 text-[14.5px] text-slate-400 transition-colors duration-200 hover:text-white"
+              className="group inline-flex items-center gap-1.5 text-[14.5px] text-white/75 transition-colors duration-200 hover:text-white"
             >
               {link.label}
               <ArrowUpRight className="h-3 w-3 -translate-x-1 text-white opacity-0 transition-all duration-300 ease-premium group-hover:translate-x-0 group-hover:opacity-100" />

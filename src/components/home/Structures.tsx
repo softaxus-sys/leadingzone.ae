@@ -44,19 +44,19 @@ export function Structures() {
                 className="group flex h-full flex-col bg-navy-950 p-8 transition-colors duration-500 ease-premium hover:bg-navy-900 sm:p-9"
               >
                 <div className="flex items-baseline gap-3">
-                  <span className="font-display text-[11px] font-bold tracking-[0.2em] text-gold-500">
+                  <span className="font-display text-[11px] font-bold tracking-[0.2em] text-white/70">
                     0{i + 1}
                   </span>
                   <h3 className="text-2xl text-white">{structure.name}</h3>
                 </div>
 
-                <p className="mt-5 text-[14.5px] leading-relaxed text-slate-400">
+                <p className="mt-5 text-[14.5px] leading-relaxed text-white/75">
                   {structure.summary}
                 </p>
 
                 <ul className="mt-7 flex-1 space-y-3">
                   {structure.points.map((point) => (
-                    <li key={point} className="flex gap-3 text-[14px] text-slate-300">
+                    <li key={point} className="flex gap-3 text-[14px] text-white/90">
                       <Check
                         className="mt-[3px] h-3.5 w-3.5 shrink-0 text-white"
                         strokeWidth={2.6}
@@ -67,10 +67,10 @@ export function Structures() {
                 </ul>
 
                 <div className="mt-8 border-t border-white/10 pt-5">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/60">
                     Typically suits
                   </p>
-                  <p className="mt-2 text-[14px] text-slate-300">{structure.bestFor}</p>
+                  <p className="mt-2 text-[14px] text-white/90">{structure.bestFor}</p>
                 </div>
 
                 <span className="mt-6 inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-white">
@@ -83,7 +83,7 @@ export function Structures() {
         </ul>
 
         <Reveal delay={160}>
-          <p className="mt-8 max-w-3xl text-[13px] leading-relaxed text-slate-500">
+          <p className="mt-8 max-w-3xl text-[13px] leading-relaxed text-white/60">
             Ownership rules, permitted activities and visa allocations are set by the
             relevant authorities and change from time to time. We confirm the current
             position for your specific activity rather than relying on general

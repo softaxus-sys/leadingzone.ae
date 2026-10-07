@@ -145,11 +145,11 @@ export function ServicePage({
                 delay={i * 90}
                 className="bg-navy-950 p-7 sm:p-8"
               >
-                <span className="font-display text-[11px] font-bold tracking-[0.2em] text-gold-500">
+                <span className="font-display text-[11px] font-bold tracking-[0.2em] text-white/70">
                   0{i + 1}
                 </span>
                 <h3 className="mt-4 text-[17px] font-bold text-white">{step.title}</h3>
-                <p className="mt-3 text-[14px] leading-relaxed text-slate-400">
+                <p className="mt-3 text-[14px] leading-relaxed text-white/75">
                   {step.body}
                 </p>
               </Reveal>

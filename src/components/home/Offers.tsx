@@ -36,7 +36,7 @@ export function Offers() {
               >
                 {offer.tag}
               </span>
-              <h3 className="mt-6 text-2xl">{offer.title}</h3>
+              <h3 className={cn('mt-6 text-2xl', offer.featured && 'text-white')}>{offer.title}</h3>
               <p className={cn('mt-4 font-display text-5xl font-bold', offer.featured ? 'text-white' : 'text-gold-500')}>
                 {offer.price}
                 <span className="text-2xl">/-</span>

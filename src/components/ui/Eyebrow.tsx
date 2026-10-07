@@ -11,10 +11,10 @@ export function Eyebrow({
   onDark?: boolean;
 }) {
   return (
-    <span className={cn('lz-eyebrow', onDark && 'text-gold-400', className)}>
+    <span className={cn('lz-eyebrow', onDark && 'text-white', className)}>
       <span
         aria-hidden
-        className={cn('h-px w-7', onDark ? 'bg-gold-400/70' : 'bg-gold-600/70')}
+        className={cn('h-px w-7', onDark ? 'bg-white/70' : 'bg-gold-600/70')}
       />
       {children}
     </span>

@@ -14,7 +14,7 @@ export default function NotFound() {
     <section className="lz-grain relative isolate flex min-h-[calc(100svh-76px)] items-center overflow-hidden bg-gold-700 pb-24 pt-36 sm:pt-44">
       <div
         aria-hidden
-        className="absolute inset-0 -z-30 bg-[radial-gradient(110%_80%_at_50%_100%,rgb(230_0_8)_0%,rgb(180_0_6)_46%,rgb(120_0_4)_100%)]"
+        className="absolute inset-0 -z-30 bg-[radial-gradient(110%_80%_at_50%_100%,rgb(240_0_8)_0%,rgb(205_0_7)_46%,rgb(150_0_5)_100%)]"
       />
       <div
         aria-hidden
@@ -64,7 +64,7 @@ export default function NotFound() {
                   className="group flex items-center justify-between gap-4 border-b border-white/[0.08] py-3.5 text-[14.5px] text-white/90 transition-colors hover:text-white"
                 >
                   {service.title}
-                  <ArrowRight className="h-3.5 w-3.5 shrink-0 -translate-x-1 text-gold-500 opacity-0 transition-all duration-300 ease-premium group-hover:translate-x-0 group-hover:opacity-100" />
+                  <ArrowRight className="h-3.5 w-3.5 shrink-0 -translate-x-1 text-white opacity-0 transition-all duration-300 ease-premium group-hover:translate-x-0 group-hover:opacity-100" />
                 </Link>
               </li>
             ))}

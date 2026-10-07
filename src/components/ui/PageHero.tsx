@@ -27,7 +27,7 @@ export function PageHero({
     <section className="lz-grain relative isolate overflow-hidden bg-gold-700 pb-16 pt-32 sm:pb-20 sm:pt-40 lg:pt-44">
       <div
         aria-hidden
-        className="absolute inset-0 -z-30 bg-[radial-gradient(110%_80%_at_78%_100%,rgb(230_0_8)_0%,rgb(180_0_6)_46%,rgb(120_0_4)_100%)]"
+        className="absolute inset-0 -z-30 bg-[radial-gradient(110%_80%_at_78%_100%,rgb(240_0_8)_0%,rgb(205_0_7)_46%,rgb(150_0_5)_100%)]"
       />
       <div
         aria-hidden

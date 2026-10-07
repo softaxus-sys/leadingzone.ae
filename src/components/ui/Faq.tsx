@@ -50,7 +50,7 @@ export function Faq({
                   className={cn(
                     'mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border transition-all duration-300 ease-premium',
                     isOpen
-                      ? 'rotate-45 border-gold-500 bg-gold-500 text-navy-950'
+                      ? 'rotate-45 border-gold-500 bg-gold-500 text-white'
                       : 'border-slateink-200 text-slateink-500 group-hover:border-gold-500/60 group-hover:text-gold-700',
                   )}
                 >

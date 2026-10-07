@@ -40,7 +40,7 @@ export function SectionHeading({
         <p
           className={cn(
             'mt-5 text-[17px] leading-relaxed',
-            onDark ? 'text-slate-300/90' : 'text-slateink-500',
+            onDark ? 'text-white/85' : 'text-slateink-500',
           )}
         >
           {lead}
