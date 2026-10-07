@@ -1,21 +1,22 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { WhatsAppFab } from '@/components/layout/WhatsAppFab';
 import { contact, site, social } from '@/content/site';
 
-const inter = Inter({
-  subsets: ['latin'],
+const inter = localFont({
+  src: './fonts/inter.woff2',
+  weight: '100 900',
   display: 'swap',
   variable: '--font-inter',
 });
 
-const jakarta = Plus_Jakarta_Sans({
-  subsets: ['latin'],
+const jakarta = localFont({
+  src: './fonts/jakarta.woff2',
+  weight: '200 800',
   display: 'swap',
-  weight: ['600', '700', '800'],
   variable: '--font-display',
 });
 
