@@ -11,10 +11,10 @@ export default function NotFound() {
   const popular = services.slice(0, 6);
 
   return (
-    <section className="lz-grain relative isolate flex min-h-[calc(100svh-76px)] items-center overflow-hidden bg-navy-950 pb-24 pt-36 sm:pt-44">
+    <section className="lz-grain relative isolate flex min-h-[calc(100svh-76px)] items-center overflow-hidden bg-gold-700 pb-24 pt-36 sm:pt-44">
       <div
         aria-hidden
-        className="absolute inset-0 -z-30 bg-[radial-gradient(110%_80%_at_50%_100%,rgb(32_32_32)_0%,rgb(10_10_10)_46%,rgb(0_0_0)_100%)]"
+        className="absolute inset-0 -z-30 bg-[radial-gradient(110%_80%_at_50%_100%,rgb(230_0_8)_0%,rgb(180_0_6)_46%,rgb(120_0_4)_100%)]"
       />
       <div
         aria-hidden
@@ -25,7 +25,7 @@ export default function NotFound() {
 
       <Container className="relative">
         <div className="max-w-2xl">
-          <p className="font-display text-[11px] font-bold uppercase tracking-[0.22em] text-gold-400">
+          <p className="font-display text-[11px] font-bold uppercase tracking-[0.22em] text-white">
             Error 404
           </p>
 
@@ -33,7 +33,7 @@ export default function NotFound() {
             This page has moved on
           </h1>
 
-          <p className="mt-6 max-w-xl text-[17px] leading-relaxed text-slate-400">
+          <p className="mt-6 max-w-xl text-[17px] leading-relaxed text-white/80">
             The page you were looking for does not exist, or the link that brought you
             here is out of date. Everything else is still where it should be.
           </p>
@@ -44,7 +44,7 @@ export default function NotFound() {
               Back to Homepage
             </Button>
             <Button href="/services" variant="onDark" size="lg">
-              <Search className="h-4 w-4 text-gold-400" strokeWidth={2} />
+              <Search className="h-4 w-4 text-white" strokeWidth={2} />
               Browse All Services
             </Button>
           </div>
@@ -52,7 +52,7 @@ export default function NotFound() {
 
         {/* Onward links */}
         <div className="mt-16 border-t border-white/10 pt-10">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-gold-400">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white">
             Popular pages
           </p>
 
@@ -61,7 +61,7 @@ export default function NotFound() {
               <li key={service.slug}>
                 <Link
                   href={`/${service.slug}`}
-                  className="group flex items-center justify-between gap-4 border-b border-white/[0.08] py-3.5 text-[14.5px] text-slate-300 transition-colors hover:text-white"
+                  className="group flex items-center justify-between gap-4 border-b border-white/[0.08] py-3.5 text-[14.5px] text-white/90 transition-colors hover:text-white"
                 >
                   {service.title}
                   <ArrowRight className="h-3.5 w-3.5 shrink-0 -translate-x-1 text-gold-500 opacity-0 transition-all duration-300 ease-premium group-hover:translate-x-0 group-hover:opacity-100" />
@@ -70,9 +70,9 @@ export default function NotFound() {
             ))}
           </ul>
 
-          <p className="mt-9 text-[14px] text-slate-500">
+          <p className="mt-9 text-[14px] text-white/70">
             Still cannot find it?{' '}
-            <Link href="/contact" className="font-semibold text-gold-400 lz-link-underline">
+            <Link href="/contact" className="font-semibold text-white lz-link-underline">
               Get in touch
             </Link>{' '}
             or message us on{' '}
@@ -80,7 +80,7 @@ export default function NotFound() {
               href={contact.whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-gold-400 lz-link-underline"
+              className="font-semibold text-white lz-link-underline"
             >
               WhatsApp
             </a>

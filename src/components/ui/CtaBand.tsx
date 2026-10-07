@@ -16,10 +16,10 @@ export function CtaBand({
   lead?: string;
 }) {
   return (
-    <section className="lz-grain relative overflow-hidden bg-navy-950 py-20 sm:py-24">
+    <section className="lz-grain relative overflow-hidden bg-gold-700 py-20 sm:py-24">
       <div
         aria-hidden
-        className="pointer-events-none absolute left-1/2 top-0 h-[30rem] w-[52rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(ellipse,rgb(255_0_8/0.14)_0%,transparent_65%)]"
+        className="pointer-events-none absolute left-1/2 top-0 h-[30rem] w-[52rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(ellipse,rgb(255_255_255/0.14)_0%,transparent_65%)]"
       />
       <div aria-hidden className="absolute inset-x-0 top-0 h-px bg-gold-line" />
 
@@ -31,7 +31,7 @@ export function CtaBand({
           <h2 className="mt-6 text-3xl text-white sm:text-4xl lg:text-[2.75rem]">
             {title}
           </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-[16.5px] leading-relaxed text-slate-400">
+          <p className="mx-auto mt-6 max-w-2xl text-[16.5px] leading-relaxed text-white/80">
             {lead}
           </p>
 
@@ -41,7 +41,7 @@ export function CtaBand({
               <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-premium group-hover:translate-x-1" />
             </Button>
             <Button href={contact.whatsappHref} variant="onDark" size="lg">
-              <MessageCircle className="h-4 w-4 text-gold-400" strokeWidth={2} />
+              <MessageCircle className="h-4 w-4 text-white" strokeWidth={2} />
               WhatsApp {contact.whatsapp}
             </Button>
           </div>

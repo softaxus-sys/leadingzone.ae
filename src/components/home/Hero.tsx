@@ -5,13 +5,13 @@ import { DubaiSkyline } from '@/components/ui/Skyline';
 
 export function Hero() {
   return (
-    <section className="lz-grain relative isolate flex min-h-[calc(100svh-76px)] items-center overflow-hidden bg-navy-950 pt-32 pb-24 sm:pt-40 lg:min-h-[46rem] lg:pt-44 lg:pb-32">
+    <section className="lz-grain relative isolate flex min-h-[calc(100svh-76px)] items-center overflow-hidden bg-gold-700 pt-32 pb-24 sm:pt-40 lg:min-h-[46rem] lg:pt-44 lg:pb-32">
       {/* ── Backdrop stack ─────────────────────────────────────────────────── */}
 
       {/* Base wash: cool navy with a warm bias toward the horizon. */}
       <div
         aria-hidden
-        className="absolute inset-0 -z-30 bg-[radial-gradient(120%_85%_at_72%_88%,rgb(32_32_32)_0%,rgb(10_10_10)_42%,rgb(0_0_0)_100%)]"
+        className="absolute inset-0 -z-30 bg-[radial-gradient(120%_85%_at_72%_88%,rgb(230_0_8)_0%,rgb(180_0_6)_42%,rgb(120_0_4)_100%)]"
       />
 
       {/* Skyline sits on the lower third, faded at the top edge. */}
@@ -25,23 +25,23 @@ export function Hero() {
       {/* Gold horizon glow, off-centre so it does not read as a vignette. */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -z-10 h-[46rem] w-[46rem] rounded-full bg-[radial-gradient(circle,rgb(255_0_8/0.16)_0%,transparent_62%)] blur-[2px] right-[-14rem] bottom-[-18rem] lg:right-[-8rem]"
+        className="pointer-events-none absolute -z-10 h-[46rem] w-[46rem] rounded-full bg-[radial-gradient(circle,rgb(255_255_255/0.14)_0%,transparent_62%)] blur-[2px] right-[-14rem] bottom-[-18rem] lg:right-[-8rem]"
       />
 
       {/* Readability scrim behind the copy only, so the skyline stays visible. */}
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgb(0_0_0/0.85)_0%,rgb(0_0_0/0.55)_44%,transparent_78%)]"
+        className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgb(110_0_4/0.85)_0%,rgb(110_0_4/0.55)_44%,transparent_78%)]"
       />
 
       {/* ── Content ────────────────────────────────────────────────────────── */}
       <Container className="relative">
         <div className="max-w-[46rem]">
-          <p className="animate-fade-in text-[11.5px] font-semibold uppercase tracking-[0.22em] text-gold-400">
+          <p className="animate-fade-in text-[11.5px] font-semibold uppercase tracking-[0.22em] text-white">
             Channel Partner
-            <span className="mx-2.5 text-gold-600/60">•</span>
+            <span className="mx-2.5 text-white/50">•</span>
             10+ Years
-            <span className="mx-2.5 text-gold-600/60">•</span>
+            <span className="mx-2.5 text-white/50">•</span>
             Dubai, UAE
           </p>
 
@@ -51,13 +51,13 @@ export function Hero() {
               AED 10,800/-
               <span
                 aria-hidden
-                className="absolute inset-x-0 -bottom-2 h-[3px] bg-gradient-to-r from-gold-500 via-gold-500/70 to-transparent"
+                className="absolute inset-x-0 -bottom-2 h-[3px] bg-gradient-to-r from-white via-white/70 to-transparent"
               />
             </span>
           </h1>
 
           <p
-            className="mt-7 max-w-[34rem] animate-fade-up text-[17px] leading-relaxed text-slate-300 sm:text-[18px]"
+            className="mt-7 max-w-[34rem] animate-fade-up text-[17px] leading-relaxed text-white/90 sm:text-[18px]"
             style={{ animationDelay: '120ms' }}
           >
             We can offer AED 10,800/- — lowest in the market. Leading Zone
@@ -75,7 +75,7 @@ export function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-premium group-hover:translate-x-1" />
             </Button>
             <Button href="/contact" variant="onDark" size="lg">
-              <CalendarCheck className="h-4 w-4 text-gold-400" strokeWidth={2} />
+              <CalendarCheck className="h-4 w-4 text-white" strokeWidth={2} />
               Book Free Consultation
             </Button>
           </div>
@@ -84,7 +84,7 @@ export function Hero() {
             className="mt-12 flex animate-fade-up items-center gap-4 border-t border-white/10 pt-7 sm:gap-6"
             style={{ animationDelay: '320ms' }}
           >
-            <p className="max-w-md text-[13.5px] leading-relaxed text-slate-400">
+            <p className="max-w-md text-[13.5px] leading-relaxed text-white/80">
               Mainland, free zone and offshore formation, plus the visas, banking,
               Ejari and tax registrations that follow.
             </p>

@@ -24,10 +24,10 @@ export function PageHero({
   children?: React.ReactNode;
 }) {
   return (
-    <section className="lz-grain relative isolate overflow-hidden bg-navy-950 pb-16 pt-32 sm:pb-20 sm:pt-40 lg:pt-44">
+    <section className="lz-grain relative isolate overflow-hidden bg-gold-700 pb-16 pt-32 sm:pb-20 sm:pt-40 lg:pt-44">
       <div
         aria-hidden
-        className="absolute inset-0 -z-30 bg-[radial-gradient(110%_80%_at_78%_100%,rgb(32_32_32)_0%,rgb(10_10_10)_46%,rgb(0_0_0)_100%)]"
+        className="absolute inset-0 -z-30 bg-[radial-gradient(110%_80%_at_78%_100%,rgb(230_0_8)_0%,rgb(180_0_6)_46%,rgb(120_0_4)_100%)]"
       />
       <div
         aria-hidden
@@ -37,30 +37,30 @@ export function PageHero({
       </div>
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-40 -top-24 -z-10 h-[34rem] w-[34rem] rounded-full bg-[radial-gradient(circle,rgb(255_0_8/0.13)_0%,transparent_66%)]"
+        className="pointer-events-none absolute -right-40 -top-24 -z-10 h-[34rem] w-[34rem] rounded-full bg-[radial-gradient(circle,rgb(255_255_255/0.13)_0%,transparent_66%)]"
       />
 
       <Container className="relative">
         {crumbs.length > 0 ? (
           <nav aria-label="Breadcrumb" className="mb-8">
-            <ol className="flex flex-wrap items-center gap-1.5 text-[12.5px] text-slate-500">
+            <ol className="flex flex-wrap items-center gap-1.5 text-[12.5px] text-white/70">
               <li>
-                <Link href="/" className="transition-colors hover:text-gold-400">
+                <Link href="/" className="transition-colors hover:text-white">
                   Home
                 </Link>
               </li>
               {crumbs.map((crumb) => (
                 <li key={crumb.label} className="flex items-center gap-1.5">
-                  <ChevronRight className="h-3 w-3 text-slate-600" strokeWidth={2.5} />
+                  <ChevronRight className="h-3 w-3 text-white/60" strokeWidth={2.5} />
                   {crumb.href ? (
                     <Link
                       href={crumb.href}
-                      className="transition-colors hover:text-gold-400"
+                      className="transition-colors hover:text-white"
                     >
                       {crumb.label}
                     </Link>
                   ) : (
-                    <span className="text-slate-300">{crumb.label}</span>
+                    <span className="text-white/90">{crumb.label}</span>
                   )}
                 </li>
               ))}
@@ -74,7 +74,7 @@ export function PageHero({
             {title}
           </h1>
           {lead ? (
-            <p className="mt-6 max-w-2xl text-[17px] leading-relaxed text-slate-400">
+            <p className="mt-6 max-w-2xl text-[17px] leading-relaxed text-white/80">
               {lead}
             </p>
           ) : null}

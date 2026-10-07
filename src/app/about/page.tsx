@@ -123,7 +123,7 @@ export default function AboutPage() {
             <Reveal delay={140}>
               <div className="relative overflow-hidden rounded-md bg-navy-950 lz-grain">
                 <div className="absolute inset-x-0 bottom-0 h-3/5 opacity-70">
-                  <DubaiSkyline />
+                  <DubaiSkyline tone="black" />
                 </div>
                 <div
                   aria-hidden

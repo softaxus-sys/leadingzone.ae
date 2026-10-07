@@ -77,7 +77,7 @@ export function Header() {
    * the menu panel is opaque white on its own, and flipping the bar while the
    * utility strip is still showing would leave that strip light-on-white.
    */
-  const solid = scrolled || mobileOpen;
+  const solid = true;
 
   return (
     <header

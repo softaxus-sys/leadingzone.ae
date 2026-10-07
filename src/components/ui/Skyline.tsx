@@ -12,7 +12,33 @@ import { cn } from '@/lib/utils';
  * `src/components/home/Hero.tsx` with a <picture>/<Image> element; the
  * surrounding overlay and gradient stack is designed to work with either.
  */
-export function DubaiSkyline({ className }: { className?: string }) {
+const palettes = {
+  black: {
+    haze: 'rgb(255 0 8)',
+    far: ['rgb(48 48 48)', 'rgb(20 20 20)'],
+    mid: ['rgb(32 32 32)', 'rgb(10 10 10)'],
+    near: ['rgb(10 10 10)', 'rgb(0 0 0)'],
+    windows: 'rgb(255 61 68)',
+    line: 'rgb(255 0 8)',
+  },
+  red: {
+    haze: 'rgb(255 255 255)',
+    far: ['rgb(200 0 7)', 'rgb(160 0 5)'],
+    mid: ['rgb(170 0 6)', 'rgb(130 0 4)'],
+    near: ['rgb(130 0 4)', 'rgb(90 0 3)'],
+    windows: 'rgb(255 255 255)',
+    line: 'rgb(255 255 255)',
+  },
+} as const;
+
+export function DubaiSkyline({
+  className,
+  tone = 'red',
+}: {
+  className?: string;
+  tone?: 'red' | 'black';
+}) {
+  const c = palettes[tone];
   return (
     <svg
       viewBox="0 0 1600 520"
@@ -23,33 +49,33 @@ export function DubaiSkyline({ className }: { className?: string }) {
     >
       <defs>
         {/* Warm haze sitting on the horizon line. */}
-        <linearGradient id="lz-haze" x1="0" y1="1" x2="0" y2="0">
-          <stop offset="0%" stopColor="rgb(255 0 8)" stopOpacity="0.30" />
-          <stop offset="45%" stopColor="rgb(255 0 8)" stopOpacity="0.08" />
-          <stop offset="100%" stopColor="rgb(255 0 8)" stopOpacity="0" />
+        <linearGradient id={`lz-haze-${tone}`} x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0%" stopColor={c.haze} stopOpacity="0.30" />
+          <stop offset="45%" stopColor={c.haze} stopOpacity="0.08" />
+          <stop offset="100%" stopColor={c.haze} stopOpacity="0" />
         </linearGradient>
 
         {/* Depth layers: further back reads lighter against the navy field. */}
-        <linearGradient id="lz-far" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="rgb(48 48 48)" stopOpacity="0.55" />
-          <stop offset="100%" stopColor="rgb(20 20 20)" stopOpacity="0.9" />
+        <linearGradient id={`lz-far-${tone}`} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={c.far[0]} stopOpacity="0.55" />
+          <stop offset="100%" stopColor={c.far[1]} stopOpacity="0.9" />
         </linearGradient>
-        <linearGradient id="lz-mid" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="rgb(32 32 32)" stopOpacity="0.92" />
-          <stop offset="100%" stopColor="rgb(10 10 10)" stopOpacity="1" />
+        <linearGradient id={`lz-mid-${tone}`} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={c.mid[0]} stopOpacity="0.92" />
+          <stop offset="100%" stopColor={c.mid[1]} stopOpacity="1" />
         </linearGradient>
-        <linearGradient id="lz-near" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="rgb(10 10 10)" />
-          <stop offset="100%" stopColor="rgb(0 0 0)" />
+        <linearGradient id={`lz-near-${tone}`} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={c.near[0]} />
+          <stop offset="100%" stopColor={c.near[1]} />
         </linearGradient>
 
         {/* Lit windows, tiled over the near layer only. */}
-        <pattern id="lz-windows" width="11" height="16" patternUnits="userSpaceOnUse">
-          <rect x="3" y="5" width="2.5" height="4" fill="rgb(255 61 68)" opacity="0.10" />
-          <rect x="7" y="11" width="2" height="3" fill="rgb(255 61 68)" opacity="0.05" />
+        <pattern id={`lz-windows-${tone}`} width="11" height="16" patternUnits="userSpaceOnUse">
+          <rect x="3" y="5" width="2.5" height="4" fill={c.windows} opacity="0.10" />
+          <rect x="7" y="11" width="2" height="3" fill={c.windows} opacity="0.05" />
         </pattern>
 
-        <g id="lz-near-shapes">
+        <g id={`lz-near-shapes-${tone}`}>
           {/* Emirates-style twin towers with chamfered crowns. */}
           <path d="M232 520V236l34-46 34 46v284Z" />
           <path d="M318 520V282l28-38 28 38v238Z" />
@@ -87,10 +113,10 @@ export function DubaiSkyline({ className }: { className?: string }) {
       </defs>
 
       {/* Horizon haze behind everything. */}
-      <rect x="0" y="180" width="1600" height="340" fill="url(#lz-haze)" />
+      <rect x="0" y="180" width="1600" height="340" fill={`url(#lz-haze-${tone})`} />
 
       {/* Far layer: low-contrast background massing. */}
-      <g fill="url(#lz-far)" opacity="0.5">
+      <g fill={`url(#lz-far-${tone})`} opacity="0.5">
         <path d="M0 520V394h70v126Z" />
         <path d="M84 520V350h56v170Z" />
         <path d="M152 520V412h74v108Z" />
@@ -102,7 +128,7 @@ export function DubaiSkyline({ className }: { className?: string }) {
       </g>
 
       {/* Mid layer. */}
-      <g fill="url(#lz-mid)" opacity="0.85">
+      <g fill={`url(#lz-mid-${tone})`} opacity="0.85">
         <path d="M40 520V330h54v190Z" />
         <path d="M108 520V386h60v134Z" />
         <path d="M180 520V300h44v220Z" />
@@ -113,11 +139,11 @@ export function DubaiSkyline({ className }: { className?: string }) {
       </g>
 
       {/* Near layer, drawn twice: once solid, once with the window pattern. */}
-      <use href="#lz-near-shapes" fill="url(#lz-near)" />
-      <use href="#lz-near-shapes" fill="url(#lz-windows)" />
+      <use href={`#lz-near-shapes-${tone}`} fill={`url(#lz-near-${tone})`} />
+      <use href={`#lz-near-shapes-${tone}`} fill={`url(#lz-windows-${tone})`} />
 
       {/* Ground line with a faint gold edge. */}
-      <rect x="0" y="516" width="1600" height="4" fill="rgb(255 0 8)" opacity="0.13" />
+      <rect x="0" y="516" width="1600" height="4" fill={c.line} opacity="0.13" />
     </svg>
   );
 }
