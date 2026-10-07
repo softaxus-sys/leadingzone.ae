@@ -14,12 +14,66 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 
-/** Trust strip immediately beneath the hero. Qualitative only, no invented figures. */
+/** Trust strip immediately beneath the hero. */
 export const trustPoints: { icon: LucideIcon; label: string }[] = [
-  { icon: MapPin, label: 'UAE Business Specialists' },
+  { icon: BadgeCheck, label: 'Channel Partner, 10+ Years' },
+  { icon: MapPin, label: 'Based in Dubai, Serving Worldwide' },
+  { icon: Building, label: 'Mainland, Free Zone & Offshore' },
   { icon: LifeBuoy, label: 'End-to-End Support' },
-  { icon: Building, label: 'Mainland & Free Zone Expertise' },
-  { icon: Compass, label: 'Personalised Business Guidance' },
+];
+
+/** Headline offers shown on the homepage. */
+export const offers: {
+  tag: string;
+  title: string;
+  price: string;
+  note: string;
+  points: string[];
+  featured?: boolean;
+}[] = [
+  {
+    tag: 'Lowest in the Market',
+    title: 'Company Setup in the UAE',
+    price: 'AED 10,800',
+    note: 'We can offer AED 10,800/- lowest in the market.',
+    points: [
+      'Mainland, free zone and offshore options',
+      'Guided by a Channel Partner with 10+ years of experience',
+      'Licence, visa and bank account support available',
+    ],
+    featured: true,
+  },
+  {
+    tag: 'Limited Time Offer',
+    title: 'Company Set-Up in UAE',
+    price: 'AED 6,000',
+    note: 'Straight to business in 24 hours.',
+    points: [
+      'Fast-track company set-up',
+      'Dedicated business advisers',
+      'Call or WhatsApp +971 52 668 6449',
+    ],
+  },
+];
+
+/** Entity options listed in the original site's "Our Services". */
+export const entityOptions: string[] = [
+  'Limited liability company formation',
+  'Freezone company formation in Dubai',
+  'Branch and representative offices',
+  'Offshore company formation in Dubai',
+  'Dubai Mainland company setup',
+  'Professional firms in Dubai',
+  'Shareholding companies',
+  'Joint venture companies',
+];
+
+/** Other services listed in the original site. */
+export const otherServices: string[] = [
+  'Cosmetic registration',
+  'Dubai bank accounts',
+  'Company inspection',
+  'PRO & visa services',
 ];
 
 /** The three jurisdiction routes, shown on the homepage and /company-formation. */
@@ -34,11 +88,11 @@ export const structures: {
     name: 'Mainland',
     href: '/company-formation',
     summary:
-      'For businesses seeking broad market access and operational flexibility within the UAE.',
+      'A mainland company, also known as an on-shore company, is licensed by Dubai’s Department of Economic Development (DED).',
     points: [
-      'Direct access to the UAE domestic market',
-      'Licensed by the emirate’s economic department',
-      'Scales with branches, activities and visa quota',
+      'Licensed by the Department of Economic Development',
+      'Permitted to do business in the local market',
+      'Permitted to do business outside the UAE without limitation',
     ],
     bestFor: 'Trading, services and businesses selling locally',
   },
@@ -46,11 +100,12 @@ export const structures: {
     name: 'Free Zone',
     href: '/free-zone-company-setup',
     summary:
-      'For entrepreneurs looking for specialised business ecosystems, flexible setup options and sector-focused jurisdictions.',
+      'Most UAE free zones are designed for international trade or trade between free zones, and are favoured by investors for 100% foreign ownership.',
     points: [
-      'Dozens of zones with distinct sector focuses',
-      'Flexi-desk through to office and warehouse options',
-      'Visa allocation tied to the facility you take',
+      '100% foreign ownership',
+      'Customer privileges and exemption from taxes',
+      'Low-cost, with a well-developed transport network and road connections',
+      'Affordably priced, high-quality labour',
     ],
     bestFor: 'Consultancies, tech, media, trade and export businesses',
   },
@@ -58,11 +113,11 @@ export const structures: {
     name: 'Offshore',
     href: '/offshore-company-setup',
     summary:
-      'For international business structures where an offshore setup is appropriate.',
+      'Offshore (non-resident) companies are set up in Dubai or RAKEZ and are suited to international business only.',
     points: [
-      'Used for international holding and asset ownership',
-      'Not intended for local UAE trading activity',
-      'No residence visa eligibility in most cases',
+      'Ideal for conducting international business',
+      'Cannot conduct business in the UAE',
+      'Popular as a holding company owning shares in businesses abroad',
     ],
     bestFor: 'Holding structures and cross-border arrangements',
   },
@@ -202,7 +257,7 @@ export const homeFaqs: { q: string; a: string }[] = [
   },
   {
     q: 'What does a UAE company setup cost?',
-    a: 'Cost depends on the jurisdiction, licence type, number of activities, facility and visa count. Rather than quote a headline figure that changes once the details emerge, we give you a written breakdown for your specific requirement after the consultation, including the recurring renewal cost.',
+    a: 'We can offer company setup from AED 10,800, the lowest in the market. The final cost depends on the jurisdiction, licence type, number of activities, facility and visa count, so after a short consultation we give you a written breakdown for your specific requirement, including the recurring renewal cost.',
   },
   {
     q: 'Do you support the company after it is formed?',

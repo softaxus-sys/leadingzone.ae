@@ -27,7 +27,7 @@ export function PageHero({
     <section className="lz-grain relative isolate overflow-hidden bg-navy-950 pb-16 pt-32 sm:pb-20 sm:pt-40 lg:pt-44">
       <div
         aria-hidden
-        className="absolute inset-0 -z-30 bg-[radial-gradient(110%_80%_at_78%_100%,rgb(26_46_76)_0%,rgb(10_20_36)_46%,rgb(5_11_20)_100%)]"
+        className="absolute inset-0 -z-30 bg-[radial-gradient(110%_80%_at_78%_100%,rgb(32_32_32)_0%,rgb(10_10_10)_46%,rgb(0_0_0)_100%)]"
       />
       <div
         aria-hidden
@@ -37,7 +37,7 @@ export function PageHero({
       </div>
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-40 -top-24 -z-10 h-[34rem] w-[34rem] rounded-full bg-[radial-gradient(circle,rgb(200_169_106/0.13)_0%,transparent_66%)]"
+        className="pointer-events-none absolute -right-40 -top-24 -z-10 h-[34rem] w-[34rem] rounded-full bg-[radial-gradient(circle,rgb(255_0_8/0.13)_0%,transparent_66%)]"
       />
 
       <Container className="relative">

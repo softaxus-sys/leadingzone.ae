@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { ArrowRight } from 'lucide-react';
 import { Hero } from '@/components/home/Hero';
+import { Offers } from '@/components/home/Offers';
+import { OurServicesList } from '@/components/home/OurServicesList';
 import { TrustStrip } from '@/components/home/TrustStrip';
 import { ServicesGrid } from '@/components/home/ServicesGrid';
 import { Structures } from '@/components/home/Structures';
@@ -29,6 +31,7 @@ export default function HomePage() {
     <>
       <Hero />
       <TrustStrip />
+      <Offers />
 
       {/* Services overview */}
       <Section id="services" className="bg-white">
@@ -50,6 +53,7 @@ export default function HomePage() {
         <ServicesGrid services={services} className="mt-14" />
       </Section>
 
+      <OurServicesList />
       <Structures />
       <WhyUs />
       <Process />

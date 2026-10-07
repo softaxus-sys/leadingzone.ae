@@ -18,7 +18,7 @@ export function UaeFocus() {
       </div>
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-32 top-0 h-[38rem] w-[38rem] rounded-full bg-[radial-gradient(circle,rgb(200_169_106/0.12)_0%,transparent_66%)]"
+        className="pointer-events-none absolute -right-32 top-0 h-[38rem] w-[38rem] rounded-full bg-[radial-gradient(circle,rgb(255_0_8/0.12)_0%,transparent_66%)]"
       />
 
       <div className="relative grid gap-14 lg:grid-cols-12 lg:gap-16">

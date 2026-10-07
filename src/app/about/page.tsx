@@ -29,8 +29,8 @@ const principles = [
     body: 'Every engagement starts with understanding the business. If the structure you came in asking for is the wrong one, we say so before any fee is taken.',
   },
   {
-    title: 'No invented numbers',
-    body: 'We do not quote headline prices that change once the details emerge, and we do not publish client counts or success rates we cannot evidence.',
+    title: 'Transparent pricing',
+    body: 'Company setup from AED 10,800, the lowest in the market, with the full breakdown and recurring costs confirmed before you commit.',
   },
   {
     title: 'Clear scope, in writing',
@@ -61,6 +61,28 @@ const whoWeWorkWith = [
   },
 ];
 
+const setupTypes: { title: string; body: string; bullets?: string[] }[] = [
+  {
+    title: 'Mainland company setup',
+    body: 'A mainland company, also known as an on-shore company, is licensed by Dubai’s Department of Economic Development (DED). Mainland companies are permitted to conduct business in the local market as well as outside the UAE without limitation.',
+  },
+  {
+    title: 'Free zone company setup',
+    body: 'There are several free zones in the UAE, most designed to undertake international trade or trade between free zones. They are extremely favoured by investors and corporations because of advantages such as 100% foreign ownership. Other benefits include:',
+    bullets: [
+      'Customer privileges',
+      'Exemption from taxes',
+      'Low-cost and inexpensive',
+      'A well-developed transportation network and road connection',
+      'Affordably priced high-quality labour',
+    ],
+  },
+  {
+    title: 'Offshore company',
+    body: 'Offshore entities, also known as non-resident companies, are established in Dubai or RAKEZ. This is the ideal solution only for conducting international business; you cannot conduct business in the UAE with an offshore entity. Many people also establish an offshore holding company to own shares of other businesses in other countries.',
+  },
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -81,21 +103,18 @@ export default function AboutPage() {
             />
             <Reveal delay={80} className="mt-8 space-y-5">
               <p className="text-[16.5px] leading-relaxed text-slateink-700">
-                Setting up a company in the UAE is straightforward in outline and
-                detailed in practice. The outline is what most consultancies sell. The
-                detail is where businesses get caught out: which activities your
-                licence actually permits, what the bank will want to see, how many
-                visas your facility supports, and what the renewal costs in year two.
+                Leading Zone Consultancy is a management consulting and corporate
+                advisory organization that provides worldwide business and corporate
+                solutions to fill the gap in quality corporate advisory services,
+                supporting today&rsquo;s entrepreneurs in establishing and expanding
+                their firms.
               </p>
               <p className="text-[16.5px] leading-relaxed text-slateink-700">
-                LeadingZone exists to close that gap. We work through the specifics of
-                your business before recommending a route, coordinate the formation
-                end to end, and stay on afterwards for the visas, banking, tax
-                registrations and renewals that follow.
-              </p>
-              <p className="text-[16.5px] leading-relaxed text-slateink-700">
-                We work with clients across Dubai, Abu Dhabi and the Northern
-                Emirates, and with founders setting up from outside the UAE entirely.
+                We have been based in Dubai for the past six years and have established
+                a robust network in the UAE, allowing us to provide you with the best
+                services from anywhere in the globe. As a Channel Partner with 10+
+                years of experience, we offer company setup from AED 10,800, the lowest
+                in the market.
               </p>
             </Reveal>
           </div>
@@ -108,7 +127,7 @@ export default function AboutPage() {
                 </div>
                 <div
                   aria-hidden
-                  className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[radial-gradient(circle,rgb(200_169_106/0.18)_0%,transparent_65%)]"
+                  className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[radial-gradient(circle,rgb(255_0_8/0.18)_0%,transparent_65%)]"
                 />
                 <div className="relative p-8 pb-32">
                   <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-gold-400">
@@ -123,6 +142,60 @@ export default function AboutPage() {
             </Reveal>
           </div>
         </div>
+      </Section>
+
+      {/* Business setup in the UAE */}
+      <Section className="bg-sand-50">
+        <SectionHeading eyebrow="Business Setup in the UAE" title="Why Set Up a Company in Dubai" />
+        <Reveal delay={80} className="mt-8 max-w-prose space-y-5">
+          <p className="text-[16.5px] leading-relaxed text-slateink-700">
+            There is no denying that Dubai is one of the top corporate business centers
+            in the globe. The Dubai government is particularly interested in and
+            supportive of the emirate&rsquo;s development for a fast-paced corporate
+            structure, offering advantageous company creation and opportunities for many
+            types of business structures across industries. The government
+            enthusiastically welcomes entrepreneurs from all over the world.
+          </p>
+          <p className="text-[16.5px] leading-relaxed text-slateink-700">
+            Starting a business in Dubai requires a thorough grasp of the optimal
+            business structure, which might be a Dubai Mainland company, a Freezone
+            company, or an offshore company. You must then select the appropriate type
+            of corporation, licence, and business activities to provide.
+          </p>
+        </Reveal>
+      </Section>
+
+      {/* Types of company setup */}
+      <Section className="bg-white">
+        <SectionHeading
+          eyebrow="Types of Company Setup Services"
+          title="Mainland, Free Zone and Offshore"
+          lead="With nearly a decade of expertise, business creation in Dubai has never been so straightforward and efficient. Our business advisers are well-versed in the rules, regulations and processes for establishing businesses in Dubai and its free zones."
+        />
+        <ul className="mt-14 grid gap-6 lg:grid-cols-3">
+          {setupTypes.map((t, i) => (
+            <Reveal as="li" key={t.title} delay={i * 80} className="h-full">
+              <div className="h-full rounded-md border border-slateink-200 bg-white p-8 shadow-card">
+                <h3 className="text-[20px] font-bold text-navy-900">{t.title}</h3>
+                <p className="mt-3 text-[14.5px] leading-relaxed text-slateink-500">{t.body}</p>
+                {t.bullets && (
+                  <ul className="mt-5 space-y-2 text-[14.5px] text-navy-900">
+                    {t.bullets.map((b) => (
+                      <li key={b} className="flex gap-2.5">
+                        <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </Reveal>
+          ))}
+        </ul>
+        <p className="mt-8 text-[14.5px] text-slateink-500">
+          We also assist with intellectual property rights, including patents,
+          trademarks and copyrights, and with franchisor licences for businesses.
+        </p>
       </Section>
 
       {/* Principles */}

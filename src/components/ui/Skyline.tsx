@@ -24,29 +24,29 @@ export function DubaiSkyline({ className }: { className?: string }) {
       <defs>
         {/* Warm haze sitting on the horizon line. */}
         <linearGradient id="lz-haze" x1="0" y1="1" x2="0" y2="0">
-          <stop offset="0%" stopColor="rgb(200 169 106)" stopOpacity="0.30" />
-          <stop offset="45%" stopColor="rgb(200 169 106)" stopOpacity="0.08" />
-          <stop offset="100%" stopColor="rgb(200 169 106)" stopOpacity="0" />
+          <stop offset="0%" stopColor="rgb(255 0 8)" stopOpacity="0.30" />
+          <stop offset="45%" stopColor="rgb(255 0 8)" stopOpacity="0.08" />
+          <stop offset="100%" stopColor="rgb(255 0 8)" stopOpacity="0" />
         </linearGradient>
 
         {/* Depth layers: further back reads lighter against the navy field. */}
         <linearGradient id="lz-far" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="rgb(39 64 95)" stopOpacity="0.55" />
-          <stop offset="100%" stopColor="rgb(17 32 56)" stopOpacity="0.9" />
+          <stop offset="0%" stopColor="rgb(48 48 48)" stopOpacity="0.55" />
+          <stop offset="100%" stopColor="rgb(20 20 20)" stopOpacity="0.9" />
         </linearGradient>
         <linearGradient id="lz-mid" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="rgb(26 46 76)" stopOpacity="0.92" />
-          <stop offset="100%" stopColor="rgb(10 20 36)" stopOpacity="1" />
+          <stop offset="0%" stopColor="rgb(32 32 32)" stopOpacity="0.92" />
+          <stop offset="100%" stopColor="rgb(10 10 10)" stopOpacity="1" />
         </linearGradient>
         <linearGradient id="lz-near" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="rgb(10 20 36)" />
-          <stop offset="100%" stopColor="rgb(5 11 20)" />
+          <stop offset="0%" stopColor="rgb(10 10 10)" />
+          <stop offset="100%" stopColor="rgb(0 0 0)" />
         </linearGradient>
 
         {/* Lit windows, tiled over the near layer only. */}
         <pattern id="lz-windows" width="11" height="16" patternUnits="userSpaceOnUse">
-          <rect x="3" y="5" width="2.5" height="4" fill="rgb(217 193 142)" opacity="0.10" />
-          <rect x="7" y="11" width="2" height="3" fill="rgb(217 193 142)" opacity="0.05" />
+          <rect x="3" y="5" width="2.5" height="4" fill="rgb(255 61 68)" opacity="0.10" />
+          <rect x="7" y="11" width="2" height="3" fill="rgb(255 61 68)" opacity="0.05" />
         </pattern>
 
         <g id="lz-near-shapes">
@@ -117,7 +117,7 @@ export function DubaiSkyline({ className }: { className?: string }) {
       <use href="#lz-near-shapes" fill="url(#lz-windows)" />
 
       {/* Ground line with a faint gold edge. */}
-      <rect x="0" y="516" width="1600" height="4" fill="rgb(200 169 106)" opacity="0.13" />
+      <rect x="0" y="516" width="1600" height="4" fill="rgb(255 0 8)" opacity="0.13" />
     </svg>
   );
 }

@@ -84,7 +84,7 @@ export function Header() {
       className={cn(
         'fixed inset-x-0 top-0 z-50 transition-all duration-300 ease-premium',
         solid
-          ? 'border-b border-slateink-200/80 bg-white/[0.94] shadow-[0_1px_20px_-8px_rgb(15_23_42_/_0.18)] backdrop-blur-xl'
+          ? 'border-b border-slateink-200/80 bg-white/[0.94] shadow-[0_1px_20px_-8px_rgb(10_10_10_/_0.18)] backdrop-blur-xl'
           : 'border-b border-white/[0.08] bg-transparent',
       )}
     >

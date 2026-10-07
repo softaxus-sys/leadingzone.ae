@@ -14,7 +14,7 @@ export default function NotFound() {
     <section className="lz-grain relative isolate flex min-h-[calc(100svh-76px)] items-center overflow-hidden bg-navy-950 pb-24 pt-36 sm:pt-44">
       <div
         aria-hidden
-        className="absolute inset-0 -z-30 bg-[radial-gradient(110%_80%_at_50%_100%,rgb(26_46_76)_0%,rgb(10_20_36)_46%,rgb(5_11_20)_100%)]"
+        className="absolute inset-0 -z-30 bg-[radial-gradient(110%_80%_at_50%_100%,rgb(32_32_32)_0%,rgb(10_10_10)_46%,rgb(0_0_0)_100%)]"
       />
       <div
         aria-hidden

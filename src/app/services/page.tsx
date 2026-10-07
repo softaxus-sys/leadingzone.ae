@@ -4,6 +4,7 @@ import { Section } from '@/components/ui/Section';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { ServicesGrid } from '@/components/home/ServicesGrid';
 import { Process } from '@/components/home/Process';
+import { OurServicesList } from '@/components/home/OurServicesList';
 import { CtaBand } from '@/components/ui/CtaBand';
 import { corporateServices, setupServices } from '@/content/services';
 
@@ -48,6 +49,7 @@ export default function ServicesPage() {
         <ServicesGrid services={corporateServices} className="mt-14" />
       </Section>
 
+      <OurServicesList />
       <Process />
       <CtaBand />
     </>

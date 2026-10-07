@@ -10,33 +10,33 @@
    ========================================================================== */
 :root {
   /* Primary: deep navy / near-black */
-  --lz-navy-950: 5 11 20;
-  --lz-navy-900: 10 20 36;
-  --lz-navy-800: 17 32 56;
-  --lz-navy-700: 26 46 76;
-  --lz-navy-600: 39 64 95;
-  --lz-navy-500: 61 90 124;
+  --lz-navy-950: 0 0 0;
+  --lz-navy-900: 10 10 10;
+  --lz-navy-800: 20 20 20;
+  --lz-navy-700: 32 32 32;
+  --lz-navy-600: 48 48 48;
+  --lz-navy-500: 82 82 82;
 
   /* Secondary: warm champagne gold (accent only, never dominant) */
-  --lz-gold-700: 138 106 48;
-  --lz-gold-600: 168 133 62;
-  --lz-gold-500: 200 169 106;
-  --lz-gold-400: 217 193 142;
-  --lz-gold-300: 232 215 178;
-  --lz-gold-100: 247 241 228;
+  --lz-gold-700: 176 0 6;
+  --lz-gold-600: 214 0 7;
+  --lz-gold-500: 255 0 8;
+  --lz-gold-400: 255 61 68;
+  --lz-gold-300: 255 150 154;
+  --lz-gold-100: 255 232 232;
 
   /* Off-white / warm neutral grounds */
-  --lz-sand-50: 251 250 248;
-  --lz-sand-100: 246 245 241;
-  --lz-sand-200: 236 234 228;
+  --lz-sand-50: 252 252 252;
+  --lz-sand-100: 246 246 246;
+  --lz-sand-200: 235 235 235;
 
   /* Ink & slate scale for text and hairlines */
-  --lz-ink-900: 15 23 42;
-  --lz-ink-700: 51 65 85;
-  --lz-ink-500: 100 116 139;
-  --lz-ink-300: 203 213 225;
-  --lz-ink-200: 226 232 240;
-  --lz-ink-100: 241 245 249;
+  --lz-ink-900: 10 10 10;
+  --lz-ink-700: 55 55 55;
+  --lz-ink-500: 110 110 110;
+  --lz-ink-300: 205 205 205;
+  --lz-ink-200: 228 228 228;
+  --lz-ink-100: 243 243 243;
 
   --lz-header-height: 76px;
 }

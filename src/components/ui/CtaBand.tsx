@@ -19,7 +19,7 @@ export function CtaBand({
     <section className="lz-grain relative overflow-hidden bg-navy-950 py-20 sm:py-24">
       <div
         aria-hidden
-        className="pointer-events-none absolute left-1/2 top-0 h-[30rem] w-[52rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(ellipse,rgb(200_169_106/0.14)_0%,transparent_65%)]"
+        className="pointer-events-none absolute left-1/2 top-0 h-[30rem] w-[52rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(ellipse,rgb(255_0_8/0.14)_0%,transparent_65%)]"
       />
       <div aria-hidden className="absolute inset-x-0 top-0 h-px bg-gold-line" />
 

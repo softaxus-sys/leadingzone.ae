@@ -27,7 +27,7 @@ export function WhyUs() {
           <ul className="grid gap-x-8 gap-y-10 sm:grid-cols-2">
             {benefits.map(({ icon: Icon, title, body }, i) => (
               <Reveal as="li" key={title} delay={(i % 2) * 80 + Math.floor(i / 2) * 40}>
-                <span className="inline-flex h-11 w-11 items-center justify-center rounded-sm border border-gold-500/25 bg-white text-gold-700 shadow-[0_1px_2px_rgb(15_23_42/0.04)]">
+                <span className="inline-flex h-11 w-11 items-center justify-center rounded-sm border border-gold-500/25 bg-white text-gold-700 shadow-[0_1px_2px_rgb(10_10_10/0.04)]">
                   <Icon className="h-[18px] w-[18px]" strokeWidth={1.8} />
                 </span>
                 <h3 className="mt-5 text-[17px] font-bold text-navy-900">{title}</h3>

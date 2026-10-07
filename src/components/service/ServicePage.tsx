@@ -127,7 +127,7 @@ export function ServicePage({
       <Section className="bg-navy-950 lz-grain overflow-hidden">
         <div
           aria-hidden
-          className="pointer-events-none absolute -left-40 top-0 h-[32rem] w-[32rem] rounded-full bg-[radial-gradient(circle,rgb(200_169_106/0.09)_0%,transparent_68%)]"
+          className="pointer-events-none absolute -left-40 top-0 h-[32rem] w-[32rem] rounded-full bg-[radial-gradient(circle,rgb(255_0_8/0.09)_0%,transparent_68%)]"
         />
         <div className="relative">
           <SectionHeading

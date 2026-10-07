@@ -16,7 +16,7 @@ export function Structures() {
       {/* Subtle top-left glow keeps the dark band from going flat. */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -left-40 -top-40 h-[34rem] w-[34rem] rounded-full bg-[radial-gradient(circle,rgb(200_169_106/0.09)_0%,transparent_68%)]"
+        className="pointer-events-none absolute -left-40 -top-40 h-[34rem] w-[34rem] rounded-full bg-[radial-gradient(circle,rgb(255_0_8/0.09)_0%,transparent_68%)]"
       />
 
       <div className="relative">

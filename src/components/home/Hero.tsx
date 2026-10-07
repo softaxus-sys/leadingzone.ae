@@ -11,7 +11,7 @@ export function Hero() {
       {/* Base wash: cool navy with a warm bias toward the horizon. */}
       <div
         aria-hidden
-        className="absolute inset-0 -z-30 bg-[radial-gradient(120%_85%_at_72%_88%,rgb(26_46_76)_0%,rgb(10_20_36)_42%,rgb(5_11_20)_100%)]"
+        className="absolute inset-0 -z-30 bg-[radial-gradient(120%_85%_at_72%_88%,rgb(32_32_32)_0%,rgb(10_10_10)_42%,rgb(0_0_0)_100%)]"
       />
 
       {/* Skyline sits on the lower third, faded at the top edge. */}
@@ -25,30 +25,30 @@ export function Hero() {
       {/* Gold horizon glow, off-centre so it does not read as a vignette. */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -z-10 h-[46rem] w-[46rem] rounded-full bg-[radial-gradient(circle,rgb(200_169_106/0.16)_0%,transparent_62%)] blur-[2px] right-[-14rem] bottom-[-18rem] lg:right-[-8rem]"
+        className="pointer-events-none absolute -z-10 h-[46rem] w-[46rem] rounded-full bg-[radial-gradient(circle,rgb(255_0_8/0.16)_0%,transparent_62%)] blur-[2px] right-[-14rem] bottom-[-18rem] lg:right-[-8rem]"
       />
 
       {/* Readability scrim behind the copy only, so the skyline stays visible. */}
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgb(5_11_20/0.85)_0%,rgb(5_11_20/0.55)_44%,transparent_78%)]"
+        className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgb(0_0_0/0.85)_0%,rgb(0_0_0/0.55)_44%,transparent_78%)]"
       />
 
       {/* ── Content ────────────────────────────────────────────────────────── */}
       <Container className="relative">
         <div className="max-w-[46rem]">
           <p className="animate-fade-in text-[11.5px] font-semibold uppercase tracking-[0.22em] text-gold-400">
-            UAE Business Setup
+            Channel Partner
             <span className="mx-2.5 text-gold-600/60">•</span>
-            Corporate Services
+            10+ Years
             <span className="mx-2.5 text-gold-600/60">•</span>
-            Expert Guidance
+            Dubai, UAE
           </p>
 
           <h1 className="mt-7 animate-fade-up text-[2.6rem] leading-[1.06] text-white sm:text-5xl lg:text-[4.1rem] lg:leading-[1.04]">
-            Build Your Business in the UAE{' '}
+            Start Your UAE Company from{' '}
             <span className="relative whitespace-nowrap">
-              With Confidence
+              AED 10,800/-
               <span
                 aria-hidden
                 className="absolute inset-x-0 -bottom-2 h-[3px] bg-gradient-to-r from-gold-500 via-gold-500/70 to-transparent"
@@ -60,8 +60,10 @@ export function Hero() {
             className="mt-7 max-w-[34rem] animate-fade-up text-[17px] leading-relaxed text-slate-300 sm:text-[18px]"
             style={{ animationDelay: '120ms' }}
           >
-            Business setup, corporate services and expert guidance for entrepreneurs
-            and companies establishing their presence in the UAE.
+            We can offer AED 10,800/- — lowest in the market. Leading Zone
+            Consultancy is a management consulting and corporate advisory firm helping
+            entrepreneurs establish and expand their firms, as a Channel Partner with
+            10+ years of experience.
           </p>
 
           <div
