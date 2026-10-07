@@ -39,7 +39,7 @@ export function International() {
           <ul className="divide-y divide-slateink-200 border-y border-slateink-200">
             {internationalPoints.map(({ icon: Icon, title, body }, i) => (
               <Reveal as="li" key={title} delay={i * 80} className="flex gap-5 py-7">
-                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-sm bg-navy-900 text-gold-400">
+                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-sm bg-navy-900 text-white">
                   <Icon className="h-[18px] w-[18px]" strokeWidth={1.8} />
                 </span>
                 <div>

@@ -217,7 +217,7 @@ export function ContactForm() {
           type="submit"
           className="group inline-flex h-[52px] flex-1 items-center justify-center gap-2 rounded-sm bg-navy-900 px-7 text-[15px] font-semibold text-white shadow-card transition-all duration-300 ease-premium hover:-translate-y-px hover:bg-navy-800 hover:shadow-lift"
         >
-          <Mail className="h-4 w-4 text-gold-400" strokeWidth={2} />
+          <Mail className="h-4 w-4 text-white" strokeWidth={2} />
           Send Enquiry
           <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-premium group-hover:translate-x-1" />
         </button>

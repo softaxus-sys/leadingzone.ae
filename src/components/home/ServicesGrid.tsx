@@ -29,7 +29,7 @@ export function ServiceCard({
           className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-gold-500/0 blur-2xl transition-colors duration-700 ease-premium group-hover:bg-gold-500/10"
         />
 
-        <span className="relative inline-flex h-12 w-12 items-center justify-center rounded-sm bg-navy-900 text-gold-400 transition-colors duration-500 ease-premium group-hover:bg-navy-800">
+        <span className="relative inline-flex h-12 w-12 items-center justify-center rounded-sm bg-navy-900 text-white transition-colors duration-500 ease-premium group-hover:bg-navy-800">
           <Icon className="h-5 w-5" strokeWidth={1.7} />
         </span>
 

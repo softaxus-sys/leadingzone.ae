@@ -109,7 +109,7 @@ export default function ContactPage() {
                 <ul className="mt-7 space-y-6">
                   {channels.map(({ icon: Icon, label, value, href, external }) => (
                     <li key={label} className="flex gap-4">
-                      <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-sm bg-navy-900 text-gold-400">
+                      <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-sm bg-navy-900 text-white">
                         <Icon className="h-[18px] w-[18px]" strokeWidth={1.8} />
                       </span>
                       <div className="min-w-0">

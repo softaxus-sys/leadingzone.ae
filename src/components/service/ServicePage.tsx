@@ -44,7 +44,7 @@ export function ServicePage({
             <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-premium group-hover:translate-x-1" />
           </Button>
           <Button href={contact.phoneHref} variant="onDark" size="lg">
-            <Phone className="h-4 w-4 text-gold-400" strokeWidth={2} />
+            <Phone className="h-4 w-4 text-white" strokeWidth={2} />
             {contact.phone}
           </Button>
         </div>

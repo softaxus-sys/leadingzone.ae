@@ -58,7 +58,7 @@ export function Structures() {
                   {structure.points.map((point) => (
                     <li key={point} className="flex gap-3 text-[14px] text-slate-300">
                       <Check
-                        className="mt-[3px] h-3.5 w-3.5 shrink-0 text-gold-500"
+                        className="mt-[3px] h-3.5 w-3.5 shrink-0 text-white"
                         strokeWidth={2.6}
                       />
                       {point}
@@ -73,7 +73,7 @@ export function Structures() {
                   <p className="mt-2 text-[14px] text-slate-300">{structure.bestFor}</p>
                 </div>
 
-                <span className="mt-6 inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-gold-400">
+                <span className="mt-6 inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-white">
                   Read more
                   <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 ease-premium group-hover:translate-x-1" />
                 </span>

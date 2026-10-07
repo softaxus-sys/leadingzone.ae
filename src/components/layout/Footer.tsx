@@ -49,7 +49,7 @@ export function Footer() {
                   href={contact.phoneHref}
                   className="group inline-flex items-start gap-3 transition-colors hover:text-white"
                 >
-                  <Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold-500" strokeWidth={2} />
+                  <Phone className="mt-0.5 h-4 w-4 shrink-0 text-white" strokeWidth={2} />
                   {contact.phone}
                 </a>
               </li>
@@ -60,7 +60,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="group inline-flex items-start gap-3 transition-colors hover:text-white"
                 >
-                  <MessageCircle className="mt-0.5 h-4 w-4 shrink-0 text-gold-500" strokeWidth={2} />
+                  <MessageCircle className="mt-0.5 h-4 w-4 shrink-0 text-white" strokeWidth={2} />
                   WhatsApp {contact.whatsapp}
                 </a>
               </li>
@@ -69,12 +69,12 @@ export function Footer() {
                   href={contact.emailHref}
                   className="group inline-flex items-start gap-3 transition-colors hover:text-white"
                 >
-                  <Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold-500" strokeWidth={2} />
+                  <Mail className="mt-0.5 h-4 w-4 shrink-0 text-white" strokeWidth={2} />
                   {contact.email}
                 </a>
               </li>
               <li className="inline-flex items-start gap-3">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold-500" strokeWidth={2} />
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-white" strokeWidth={2} />
                 <span>
                   {contact.address.line1}
                   <br />
@@ -160,7 +160,7 @@ function FooterColumn({
               className="group inline-flex items-center gap-1.5 text-[14.5px] text-slate-400 transition-colors duration-200 hover:text-white"
             >
               {link.label}
-              <ArrowUpRight className="h-3 w-3 -translate-x-1 text-gold-500 opacity-0 transition-all duration-300 ease-premium group-hover:translate-x-0 group-hover:opacity-100" />
+              <ArrowUpRight className="h-3 w-3 -translate-x-1 text-white opacity-0 transition-all duration-300 ease-premium group-hover:translate-x-0 group-hover:opacity-100" />
             </Link>
           </li>
         ))}

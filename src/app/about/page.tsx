@@ -255,7 +255,7 @@ export default function AboutPage() {
       <Section className="bg-white" size="tight">
         <Reveal>
           <div className="flex flex-col gap-6 rounded-md border border-slateink-200 bg-sand-50 p-8 sm:flex-row sm:p-10">
-            <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-sm bg-navy-900 text-gold-400">
+            <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-sm bg-navy-900 text-white">
               <ShieldAlert className="h-5 w-5" strokeWidth={1.8} />
             </span>
             <div>

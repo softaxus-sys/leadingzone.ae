@@ -32,7 +32,7 @@ export function WhatsAppFab() {
           : 'pointer-events-none translate-y-4 opacity-0',
       )}
     >
-      <span className="relative inline-flex h-9 w-9 items-center justify-center rounded-full bg-gold-500 text-navy-950">
+      <span className="relative inline-flex h-9 w-9 items-center justify-center rounded-full bg-gold-500 text-white">
         <MessageCircle className="h-[18px] w-[18px]" strokeWidth={2.2} />
       </span>
       <span className="hidden text-sm font-semibold sm:inline">Chat with us</span>
