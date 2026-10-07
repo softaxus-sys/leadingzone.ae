@@ -60,7 +60,7 @@ export function Hero() {
             className="mt-7 max-w-[34rem] animate-fade-up text-[17px] leading-relaxed text-white/90 sm:text-[18px]"
             style={{ animationDelay: '120ms' }}
           >
-            We can offer AED 10,800/- — lowest in the market. Leading Zone
+            We can offer AED 10,800/-, the lowest in the market. Leading Zone
             Consultancy is a management consulting and corporate advisory firm helping
             entrepreneurs establish and expand their firms, as a Channel Partner with
             10+ years of experience.
