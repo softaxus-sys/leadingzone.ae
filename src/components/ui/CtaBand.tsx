@@ -2,48 +2,38 @@ import { ArrowRight, MessageCircle } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { Reveal } from '@/components/ui/Reveal';
-import { Eyebrow } from '@/components/ui/Eyebrow';
 import { contact } from '@/content/site';
 
 /** Closing call to action. Used at the foot of every page. */
 export function CtaBand({
-  eyebrow = 'Get Started',
-  title = 'Let’s Work Out the Right Setup for Your Business',
-  lead = 'A short conversation is usually enough to tell you which jurisdiction fits, what it will cost to run, and what the first month looks like. No obligation.',
+  title = 'Let’s work out the right setup for your business',
+  lead = 'A short conversation is usually enough to tell you which jurisdiction fits and what it will cost.',
 }: {
   eyebrow?: string;
   title?: string;
   lead?: string;
 }) {
   return (
-    <section className="lz-grain relative overflow-hidden bg-gold-700 py-20 sm:py-24">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute left-1/2 top-0 h-[30rem] w-[52rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(ellipse,rgb(255_255_255/0.14)_0%,transparent_65%)]"
-      />
-      <div aria-hidden className="absolute inset-x-0 top-0 h-px bg-gold-line" />
-
-      <Container className="relative">
-        <Reveal className="mx-auto max-w-3xl text-center">
-          <Eyebrow onDark className="justify-center">
-            {eyebrow}
-          </Eyebrow>
-          <h2 className="mt-6 text-3xl text-white sm:text-4xl lg:text-[2.75rem]">
-            {title}
-          </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-[16.5px] leading-relaxed text-white/80">
-            {lead}
-          </p>
-
-          <div className="mt-10 flex flex-col items-center justify-center gap-3.5 sm:flex-row">
-            <Button href="/contact" variant="gold" size="lg">
-              Book Free Consultation
-              <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-premium group-hover:translate-x-1" />
-            </Button>
-            <Button href={contact.whatsappHref} variant="onDark" size="lg">
-              <MessageCircle className="h-4 w-4 text-white" strokeWidth={2} />
-              WhatsApp {contact.whatsapp}
-            </Button>
+    <section className="bg-white py-16 sm:py-20">
+      <Container>
+        <Reveal>
+          <div className="rounded-3xl bg-navy-950 px-6 py-14 text-center sm:px-12 sm:py-16">
+            <h2 className="mx-auto max-w-2xl text-3xl font-semibold leading-tight tracking-[-0.015em] text-white sm:text-4xl">
+              {title}
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-[16.5px] leading-relaxed text-white/70">
+              {lead}
+            </p>
+            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <Button href="/contact" variant="gold" size="lg">
+                Book Free Consultation
+                <ArrowRight className="h-4 w-4" />
+              </Button>
+              <Button href={contact.whatsappHref} variant="onDark" size="lg">
+                <MessageCircle className="h-4 w-4" strokeWidth={2} />
+                WhatsApp {contact.whatsapp}
+              </Button>
+            </div>
           </div>
         </Reveal>
       </Container>

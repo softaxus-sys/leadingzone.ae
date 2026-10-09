@@ -5,18 +5,18 @@ type Variant = 'primary' | 'gold' | 'outline' | 'ghost' | 'onDark';
 type Size = 'sm' | 'md' | 'lg';
 
 const base =
-  'group relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm font-semibold tracking-tight transition-all duration-300 ease-premium disabled:pointer-events-none disabled:opacity-50';
+  'group relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg font-semibold transition-colors duration-200 disabled:pointer-events-none disabled:opacity-50';
 
 const variants: Record<Variant, string> = {
   primary:
-    'bg-navy-900 text-white shadow-card hover:bg-navy-800 hover:shadow-lift hover:-translate-y-px',
+    'bg-navy-900 text-white hover:bg-navy-800',
   gold:
-    'bg-white text-gold-600 shadow-card hover:bg-gold-100 hover:shadow-lift hover:-translate-y-px',
+    'bg-gold-600 text-white hover:bg-gold-700',
   outline:
-    'border border-navy-900/15 bg-white text-navy-900 hover:border-navy-900/35 hover:bg-sand-50',
-  ghost: 'text-navy-900 hover:text-gold-700',
+    'bg-sand-100 text-navy-900 hover:bg-sand-200',
+  ghost: 'text-navy-900 hover:text-gold-600',
   onDark:
-    'border border-white/25 bg-white/5 text-white backdrop-blur-sm hover:border-gold-500/60 hover:bg-white/10',
+    'bg-white/10 text-white hover:bg-white/20',
 };
 
 const sizes: Record<Size, string> = {

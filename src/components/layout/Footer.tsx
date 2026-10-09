@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import {
-  ArrowUpRight,
   Facebook,
   Instagram,
   Linkedin,
@@ -27,10 +26,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative overflow-hidden bg-navy-950 text-white/75">
-      {/* Gold hairline across the top edge. */}
-      <div aria-hidden className="h-px w-full bg-gold-line" />
-
+    <footer className="bg-navy-950 text-white/75">
       <Container>
         <div className="grid gap-12 py-16 lg:grid-cols-12 lg:gap-8 lg:py-20">
           {/* Brand + contact */}
@@ -92,7 +88,7 @@ export function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={label}
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-sm border border-white/[0.12] text-white/75 transition-all duration-300 ease-premium hover:border-white/50 hover:text-white"
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-colors duration-200 hover:bg-gold-600"
                   >
                     <Icon className="h-4 w-4" strokeWidth={1.8} />
                   </a>
@@ -110,7 +106,7 @@ export function Footer() {
         </div>
 
         {/* Disclosure: keeps the consultancy/authority distinction explicit. */}
-        <div className="border-t border-white/[0.08] py-7">
+        <div className="py-6">
           <p className="max-w-4xl text-[12.5px] leading-relaxed text-white/60">
             {site.legalName} is an independent private consultancy providing business
             setup and corporate support services. We are not a government authority,
@@ -122,7 +118,7 @@ export function Footer() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-4 border-t border-white/[0.08] py-6 text-[12.5px] sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-4 pb-8 pt-2 text-[12.5px] sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {year} {site.legalName}. All rights reserved.
           </p>
@@ -149,7 +145,7 @@ function FooterColumn({
 }) {
   return (
     <div>
-      <h3 className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white">
+      <h3 className="text-[15px] font-semibold text-white">
         {title}
       </h3>
       <ul className="mt-5 space-y-3">
@@ -160,7 +156,7 @@ function FooterColumn({
               className="group inline-flex items-center gap-1.5 text-[14.5px] text-white/75 transition-colors duration-200 hover:text-white"
             >
               {link.label}
-              <ArrowUpRight className="h-3 w-3 -translate-x-1 text-white opacity-0 transition-all duration-300 ease-premium group-hover:translate-x-0 group-hover:opacity-100" />
+              
             </Link>
           </li>
         ))}

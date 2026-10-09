@@ -3,30 +3,25 @@ import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Reveal } from '@/components/ui/Reveal';
 import { internationalMarkets, internationalPoints } from '@/content/home';
 
-/**
- * International client section. The market list describes who we regularly work
- * with; it is not a claim about volume or office presence.
- */
+/** Who we work with from abroad, and how remote setup works. */
 export function International() {
   return (
-    <Section className="bg-sand-50">
-      <div className="grid gap-14 lg:grid-cols-12 lg:gap-16">
+    <Section className="bg-white">
+      <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-5">
           <SectionHeading
-            eyebrow="International Clients"
-            title="Setting Up From Outside the UAE"
-            lead="A large share of our clients start the process from another country. That changes the sequencing: what can be done remotely, what needs attesting at home, and which steps need you on the ground."
+            title="Setting up from outside the UAE"
+            lead="Many of our clients start from another country. That changes the sequencing: what can be done remotely, what needs attesting at home, and which steps need you on the ground."
           />
-
-          <Reveal delay={140} className="mt-10">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-gold-700">
+          <Reveal delay={100} className="mt-8">
+            <p className="text-[13px] font-semibold text-navy-900">
               Regularly working with founders from
             </p>
-            <ul className="mt-5 flex flex-wrap gap-2">
+            <ul className="mt-4 flex flex-wrap gap-2">
               {internationalMarkets.map((market) => (
                 <li
                   key={market}
-                  className="rounded-sm border border-slateink-200 bg-white px-3.5 py-2 text-[13px] font-medium text-slateink-700"
+                  className="rounded-full bg-sand-100 px-4 py-2 text-[13.5px] font-medium text-navy-900"
                 >
                   {market}
                 </li>
@@ -35,19 +30,15 @@ export function International() {
           </Reveal>
         </div>
 
-        <div className="lg:col-span-6 lg:col-start-7">
-          <ul className="divide-y divide-slateink-200 border-y border-slateink-200">
+        <div className="lg:col-span-7">
+          <ul className="grid gap-5 sm:grid-cols-2">
             {internationalPoints.map(({ icon: Icon, title, body }, i) => (
-              <Reveal as="li" key={title} delay={i * 80} className="flex gap-5 py-7">
-                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-sm bg-navy-900 text-white">
-                  <Icon className="h-[18px] w-[18px]" strokeWidth={1.8} />
+              <Reveal as="li" key={title} delay={i * 60} className="rounded-2xl bg-sand-100 p-7">
+                <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-white text-gold-600">
+                  <Icon className="h-5 w-5" strokeWidth={1.8} />
                 </span>
-                <div>
-                  <h3 className="text-[16.5px] font-bold text-navy-900">{title}</h3>
-                  <p className="mt-2 text-[14.5px] leading-relaxed text-slateink-500">
-                    {body}
-                  </p>
-                </div>
+                <h3 className="mt-5 text-[17px] font-semibold">{title}</h3>
+                <p className="mt-2 text-[15px] leading-relaxed text-slateink-500">{body}</p>
               </Reveal>
             ))}
           </ul>

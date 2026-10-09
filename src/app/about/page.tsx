@@ -6,8 +6,7 @@ import { Reveal } from '@/components/ui/Reveal';
 import { CtaBand } from '@/components/ui/CtaBand';
 import { WhyUs } from '@/components/home/WhyUs';
 import { International } from '@/components/home/International';
-import { DubaiSkyline } from '@/components/ui/Skyline';
-import { ShieldAlert } from 'lucide-react';
+import { Check, ShieldAlert } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About LeadingZone',
@@ -87,7 +86,6 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="About Us"
         title="A UAE Business Partner, Not a Licence Vendor"
         lead="LeadingZone is a private business setup and corporate services consultancy. We help entrepreneurs and companies establish in the UAE and stay compliant once they have."
         crumbs={[{ label: 'About' }]}
@@ -98,7 +96,6 @@ export default function AboutPage() {
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-7">
             <SectionHeading
-              eyebrow="Who We Are"
               title="Built Around the Questions Founders Actually Ask"
             />
             <Reveal delay={80} className="mt-8 space-y-5">
@@ -121,23 +118,11 @@ export default function AboutPage() {
 
           <div className="lg:col-span-5 lg:col-start-8">
             <Reveal delay={140}>
-              <div className="relative overflow-hidden rounded-md bg-navy-950 lz-grain">
-                <div className="absolute inset-x-0 bottom-0 h-3/5 opacity-70">
-                  <DubaiSkyline tone="black" />
-                </div>
-                <div
-                  aria-hidden
-                  className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[radial-gradient(circle,rgb(255_0_8/0.18)_0%,transparent_65%)]"
-                />
-                <div className="relative p-8 pb-32">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/70">
-                    Our position
-                  </p>
-                  <p className="mt-6 font-display text-[22px] leading-snug text-white">
-                    We would rather lose a sale than sell you a structure that will
-                    not do what you need it to.
-                  </p>
-                </div>
+              <div className="rounded-3xl bg-navy-950 p-9 sm:p-10">
+                <p className="text-[22px] font-medium leading-snug text-white">
+                  We would rather lose a sale than sell you a structure that will not do
+                  what you need it to.
+                </p>
               </div>
             </Reveal>
           </div>
@@ -145,8 +130,8 @@ export default function AboutPage() {
       </Section>
 
       {/* Business setup in the UAE */}
-      <Section className="bg-sand-50">
-        <SectionHeading eyebrow="Business Setup in the UAE" title="Why Set Up a Company in Dubai" />
+      <Section className="bg-sand-100">
+        <SectionHeading title="Why set up a company in Dubai" />
         <Reveal delay={80} className="mt-8 max-w-prose space-y-5">
           <p className="text-[16.5px] leading-relaxed text-slateink-700">
             There is no denying that Dubai is one of the top corporate business centers
@@ -168,21 +153,20 @@ export default function AboutPage() {
       {/* Types of company setup */}
       <Section className="bg-white">
         <SectionHeading
-          eyebrow="Types of Company Setup Services"
           title="Mainland, Free Zone and Offshore"
           lead="With nearly a decade of expertise, business creation in Dubai has never been so straightforward and efficient. Our business advisers are well-versed in the rules, regulations and processes for establishing businesses in Dubai and its free zones."
         />
         <ul className="mt-14 grid gap-6 lg:grid-cols-3">
           {setupTypes.map((t, i) => (
             <Reveal as="li" key={t.title} delay={i * 80} className="h-full">
-              <div className="h-full rounded-md border border-slateink-200 bg-white p-8 shadow-card">
-                <h3 className="text-[20px] font-bold text-navy-900">{t.title}</h3>
+              <div className="h-full rounded-2xl bg-sand-100 p-8">
+                <h3 className="text-[20px] font-semibold text-navy-900">{t.title}</h3>
                 <p className="mt-3 text-[14.5px] leading-relaxed text-slateink-500">{t.body}</p>
                 {t.bullets && (
                   <ul className="mt-5 space-y-2 text-[14.5px] text-navy-900">
                     {t.bullets.map((b) => (
                       <li key={b} className="flex gap-2.5">
-                        <span className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
+                        <Check className="mt-[3px] h-4 w-4 shrink-0 text-gold-600" strokeWidth={2.6} />
                         {b}
                       </li>
                     ))}
@@ -199,23 +183,17 @@ export default function AboutPage() {
       </Section>
 
       {/* Principles */}
-      <Section className="bg-sand-50">
+      <Section className="bg-sand-100">
         <SectionHeading
-          eyebrow="How We Work"
-          title="Four Things You Can Hold Us To"
+          title="Four things you can hold us to"
           lead="Business setup is a crowded market with a lot of noise in it. These are the commitments that shape how we run engagements."
         />
 
-        <ul className="mt-14 grid gap-px overflow-hidden rounded-md bg-slateink-200 sm:grid-cols-2">
+        <ul className="mt-12 grid gap-5 sm:grid-cols-2">
           {principles.map((principle, i) => (
-            <Reveal as="li" key={principle.title} delay={i * 80} className="bg-white p-8 sm:p-9">
-              <span className="font-display text-[11px] font-bold tracking-[0.2em] text-gold-600">
-                0{i + 1}
-              </span>
-              <h3 className="mt-4 text-[19px] font-bold text-navy-900">
-                {principle.title}
-              </h3>
-              <p className="mt-3 text-[14.5px] leading-relaxed text-slateink-500">
+            <Reveal as="li" key={principle.title} delay={i * 70} className="rounded-2xl bg-white p-8">
+              <h3 className="text-[19px] font-semibold text-navy-900">{principle.title}</h3>
+              <p className="mt-3 text-[15px] leading-relaxed text-slateink-500">
                 {principle.body}
               </p>
             </Reveal>
@@ -228,17 +206,16 @@ export default function AboutPage() {
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
             <SectionHeading
-              eyebrow="Who We Work With"
-              title="From First Licence to Regional Base"
+              title="From first licence to regional base"
               lead="The work differs considerably depending on where a client is starting from."
             />
           </div>
           <div className="lg:col-span-7 lg:col-start-6">
-            <ul className="divide-y divide-slateink-200 border-y border-slateink-200">
+            <ul className="grid gap-5 sm:grid-cols-2">
               {whoWeWorkWith.map((group, i) => (
-                <Reveal as="li" key={group.title} delay={i * 80} className="py-7">
-                  <h3 className="text-[17px] font-bold text-navy-900">{group.title}</h3>
-                  <p className="mt-2.5 text-[14.5px] leading-relaxed text-slateink-500">
+                <Reveal as="li" key={group.title} delay={i * 70} className="rounded-2xl bg-sand-100 p-7">
+                  <h3 className="text-[17.5px] font-semibold text-navy-900">{group.title}</h3>
+                  <p className="mt-2 text-[15px] leading-relaxed text-slateink-500">
                     {group.body}
                   </p>
                 </Reveal>
@@ -254,12 +231,12 @@ export default function AboutPage() {
       {/* Independence disclosure */}
       <Section className="bg-white" size="tight">
         <Reveal>
-          <div className="flex flex-col gap-6 rounded-md border border-slateink-200 bg-sand-50 p-8 sm:flex-row sm:p-10">
-            <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-sm bg-navy-900 text-white">
+          <div className="flex flex-col gap-6 rounded-3xl bg-sand-100 p-8 sm:flex-row sm:p-10">
+            <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-gold-600">
               <ShieldAlert className="h-5 w-5" strokeWidth={1.8} />
             </span>
             <div>
-              <h2 className="text-[19px] font-bold text-navy-900">
+              <h2 className="text-[19px] font-semibold text-navy-900">
                 An independent consultancy
               </h2>
               <p className="mt-3 max-w-3xl text-[14.5px] leading-relaxed text-slateink-500">
@@ -276,7 +253,7 @@ export default function AboutPage() {
       </Section>
 
       <CtaBand
-        title="Start With a Conversation"
+        title="Start with a conversation"
         lead="Tell us what you are planning. We will tell you what it takes, what it costs and whether we are the right people to help."
       />
     </>

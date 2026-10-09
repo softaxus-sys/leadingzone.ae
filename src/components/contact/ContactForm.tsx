@@ -28,10 +28,10 @@ const budgets = [
 ];
 
 const inputClasses =
-  'h-12 w-full rounded-sm border border-slateink-200 bg-white px-4 text-[15px] text-navy-900 placeholder:text-slateink-300 transition-colors duration-200 focus:border-gold-500 focus:outline-none focus:ring-1 focus:ring-gold-500';
+  'h-12 w-full rounded-xl bg-sand-100 px-4 text-[15px] text-navy-900 placeholder:text-slateink-500/70 transition-colors duration-200 hover:bg-sand-200 focus:bg-white focus:outline-none focus:ring-2 focus:ring-gold-600';
 
 const labelClasses =
-  'block text-[12px] font-semibold uppercase tracking-[0.12em] text-slateink-500';
+  'block text-[13.5px] font-medium text-navy-900';
 
 /**
  * Native selects are stripped with `appearance-none` so they match the text
@@ -215,7 +215,7 @@ export function ContactForm() {
       <div className="flex flex-col gap-3 pt-2 sm:flex-row">
         <button
           type="submit"
-          className="group inline-flex h-[52px] flex-1 items-center justify-center gap-2 rounded-sm bg-navy-900 px-7 text-[15px] font-semibold text-white shadow-card transition-all duration-300 ease-premium hover:-translate-y-px hover:bg-navy-800 hover:shadow-lift"
+          className="group inline-flex h-[52px] flex-1 items-center justify-center gap-2 rounded-lg bg-gold-600 px-7 text-[15px] font-semibold text-white transition-colors duration-200 hover:bg-gold-700"
         >
           <Mail className="h-4 w-4 text-white" strokeWidth={2} />
           Send Enquiry
@@ -225,7 +225,7 @@ export function ContactForm() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex h-[52px] items-center justify-center gap-2 rounded-sm border border-slateink-200 bg-white px-7 text-[15px] font-semibold text-navy-900 transition-colors duration-300 hover:border-navy-900/35 hover:bg-sand-50"
+          className="inline-flex h-[52px] items-center justify-center gap-2 rounded-lg bg-sand-100 px-7 text-[15px] font-semibold text-navy-900 transition-colors duration-200 hover:bg-sand-200"
         >
           <MessageCircle className="h-4 w-4 text-gold-600" strokeWidth={2} />
           Send on WhatsApp
@@ -235,7 +235,7 @@ export function ContactForm() {
       <p className="pt-1 text-[12.5px] leading-relaxed text-slateink-500">
         Submitting opens your own email client with the enquiry pre-filled, and nothing is
         stored on this website. We usually reply within one business day. See our{' '}
-        <a href="/privacy-policy/" className="font-medium text-navy-900 lz-link-underline">
+        <a href="/privacy-policy/" className="font-medium text-gold-600 hover:text-gold-700">
           Privacy Policy
         </a>
         .

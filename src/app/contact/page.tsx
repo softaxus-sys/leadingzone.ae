@@ -71,7 +71,6 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
-        eyebrow="Contact"
         title="Book a Free Consultation"
         lead="Tell us what you are planning and we will come back with the route, the requirements and a realistic cost, usually within one business day."
         crumbs={[{ label: 'Contact' }]}
@@ -82,11 +81,7 @@ export default function ContactPage() {
           {/* Form */}
           <div className="lg:col-span-7">
             <Reveal>
-              <span className="lz-eyebrow">
-                <span aria-hidden className="h-px w-7 bg-gold-600/70" />
-                Send an enquiry
-              </span>
-              <h2 className="mt-5 text-3xl">Tell us about your business</h2>
+              <h2 className="text-3xl font-semibold tracking-[-0.015em]">Tell us about your business</h2>
               <p className="mt-4 max-w-xl text-[15.5px] leading-relaxed text-slateink-500">
                 The more you can tell us about your activities and where your customers
                 are, the more useful the first reply will be.
@@ -101,7 +96,7 @@ export default function ContactPage() {
           {/* Contact details */}
           <div className="lg:col-span-5 lg:col-start-8">
             <Reveal delay={140}>
-              <div className="rounded-md border border-slateink-200 bg-sand-50 p-8">
+              <div className="rounded-2xl bg-sand-100 p-8">
                 <h2 className="text-[19px] font-bold text-navy-900">
                   Reach us directly
                 </h2>
@@ -109,11 +104,11 @@ export default function ContactPage() {
                 <ul className="mt-7 space-y-6">
                   {channels.map(({ icon: Icon, label, value, href, external }) => (
                     <li key={label} className="flex gap-4">
-                      <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-sm bg-navy-900 text-white">
+                      <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-gold-600">
                         <Icon className="h-[18px] w-[18px]" strokeWidth={1.8} />
                       </span>
                       <div className="min-w-0">
-                        <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-slateink-500">
+                        <p className="text-[13px] font-medium text-slateink-500">
                           {label}
                         </p>
                         {href ? (
@@ -122,7 +117,7 @@ export default function ContactPage() {
                             {...(external
                               ? { target: '_blank', rel: 'noopener noreferrer' }
                               : {})}
-                            className="mt-1 block break-words text-[15px] font-semibold text-navy-900 lz-link-underline"
+                            className="mt-1 block break-words text-[15px] font-semibold text-navy-900 hover:text-gold-600"
                           >
                             {value}
                           </a>
@@ -136,8 +131,8 @@ export default function ContactPage() {
                   ))}
                 </ul>
 
-                <div className="mt-8 border-t border-slateink-200 pt-7">
-                  <p className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-slateink-500">
+                <div className="mt-9">
+                  <p className="inline-flex items-center gap-2 text-[15px] font-semibold text-navy-900">
                     <Clock className="h-3.5 w-3.5 text-gold-600" strokeWidth={2} />
                     Office hours
                   </p>
@@ -161,18 +156,17 @@ export default function ContactPage() {
         </div>
       </Section>
 
-      <Section className="bg-sand-50">
+      <Section className="bg-sand-100">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
             <SectionHeading
-              eyebrow="Before You Call"
-              title="What to Expect"
+              title="What to expect"
               lead="A short, practical conversation, not a sales pitch with a countdown timer on it."
             />
           </div>
           <div className="lg:col-span-7 lg:col-start-6">
             <Reveal>
-              <Faq items={consultationFaqs} />
+              <Faq items={consultationFaqs} onTint />
             </Reveal>
           </div>
         </div>

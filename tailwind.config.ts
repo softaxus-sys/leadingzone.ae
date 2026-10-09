@@ -47,11 +47,11 @@ const config: Config = {
         display: ['var(--font-display)', 'var(--font-inter)', 'ui-sans-serif', 'sans-serif'],
       },
       fontSize: {
-        '7xl': ['4.5rem', { lineHeight: '1.04', letterSpacing: '-0.035em' }],
-        '6xl': ['3.75rem', { lineHeight: '1.06', letterSpacing: '-0.032em' }],
-        '5xl': ['3rem', { lineHeight: '1.08', letterSpacing: '-0.03em' }],
-        '4xl': ['2.25rem', { lineHeight: '1.14', letterSpacing: '-0.025em' }],
-        '3xl': ['1.875rem', { lineHeight: '1.2', letterSpacing: '-0.02em' }],
+        '7xl': ['4.5rem', { lineHeight: '1.04', letterSpacing: '-0.015em' }],
+        '6xl': ['3.75rem', { lineHeight: '1.06', letterSpacing: '-0.015em' }],
+        '5xl': ['3rem', { lineHeight: '1.08', letterSpacing: '-0.015em' }],
+        '4xl': ['2.25rem', { lineHeight: '1.14', letterSpacing: '-0.01em' }],
+        '3xl': ['1.875rem', { lineHeight: '1.2', letterSpacing: '-0.01em' }],
       },
       maxWidth: {
         container: '78rem',

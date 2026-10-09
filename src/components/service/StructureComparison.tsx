@@ -11,9 +11,8 @@ import { structures } from '@/content/home';
  */
 export function StructureComparison() {
   return (
-    <Section className="bg-sand-50">
+    <Section className="bg-sand-100">
       <SectionHeading
-        eyebrow="Compare the Routes"
         title="Mainland, Free Zone or Offshore?"
         lead="Jurisdiction drives cost, market access, visa allocation and how banks read your application. It is worth getting right the first time."
       />
@@ -23,14 +22,9 @@ export function StructureComparison() {
           <Reveal as="li" key={structure.name} delay={i * 90} className="h-full">
             <Link
               href={structure.href}
-              className="group flex h-full flex-col rounded-md border border-slateink-200 bg-white p-8 transition-all duration-500 ease-premium hover:-translate-y-1 hover:border-gold-500/45 hover:shadow-lift"
+              className="group flex h-full flex-col rounded-2xl bg-white p-8 transition-shadow duration-300 hover:shadow-lift"
             >
-              <div className="flex items-baseline gap-3">
-                <span className="font-display text-[11px] font-bold tracking-[0.2em] text-gold-600">
-                  0{i + 1}
-                </span>
-                <h3 className="text-[22px] font-bold text-navy-900">{structure.name}</h3>
-              </div>
+              <h3 className="text-[22px] font-semibold text-navy-900">{structure.name}</h3>
 
               <p className="mt-5 text-[14.5px] leading-relaxed text-slateink-500">
                 {structure.summary}
@@ -51,12 +45,9 @@ export function StructureComparison() {
                 ))}
               </ul>
 
-              <div className="mt-7 border-t border-slateink-200 pt-5">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slateink-500">
-                  Typically suits
-                </p>
-                <p className="mt-2 text-[14px] text-slateink-700">{structure.bestFor}</p>
-              </div>
+              <p className="mt-7 text-[14px] text-slateink-500">
+                Typically suits: {structure.bestFor}
+              </p>
 
               <span className="mt-6 inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-navy-900">
                 Read more

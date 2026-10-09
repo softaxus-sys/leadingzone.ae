@@ -25,7 +25,6 @@ export default function ServicesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Our Services"
         title="Everything You Need to Establish and Operate in the UAE"
         lead="Two halves of the same job: getting the company licensed correctly, and keeping it compliant and operational afterwards. We handle both."
         crumbs={[{ label: 'Services' }]}
@@ -33,7 +32,6 @@ export default function ServicesPage() {
 
       <Section id="business-setup" className="bg-white">
         <SectionHeading
-          eyebrow="Business Setup"
           title="Getting the Structure Right"
           lead="The jurisdiction you incorporate in determines your market access, your visa allocation, your renewal costs and how banks assess you. It is the decision that everything else follows from."
         />
@@ -42,7 +40,6 @@ export default function ServicesPage() {
 
       <Section id="corporate-services" className="bg-sand-50">
         <SectionHeading
-          eyebrow="Corporate Services"
           title="Keeping the Business Running"
           lead="Licences renew, visas expire, tax registrations fall due and documents need attesting. This is the ongoing work that keeps a UAE company in good standing."
         />

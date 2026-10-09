@@ -1,9 +1,7 @@
 import type { Metadata } from 'next';
 import { ArrowRight } from 'lucide-react';
 import { Hero } from '@/components/home/Hero';
-import { Offers } from '@/components/home/Offers';
 import { OurServicesList } from '@/components/home/OurServicesList';
-import { TrustStrip } from '@/components/home/TrustStrip';
 import { ServicesGrid } from '@/components/home/ServicesGrid';
 import { Structures } from '@/components/home/Structures';
 import { WhyUs } from '@/components/home/WhyUs';
@@ -30,22 +28,19 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <TrustStrip />
-      <Offers />
 
       {/* Services overview */}
       <Section id="services" className="bg-white">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeading
-            eyebrow="Our Services"
-            title="Everything You Need to Establish and Operate in the UAE"
+            title="Everything you need to establish and operate in the UAE"
             lead="Formation is the first step. The services that keep a UAE company running, such as visas, banking, tax registration and renewals, matter just as much, and we handle them under one roof."
             className="lg:max-w-2xl"
           />
           <Reveal delay={120} className="shrink-0">
             <Button href="/services" variant="outline" size="lg">
               View All Services
-              <ArrowRight className="h-4 w-4 text-gold-600 transition-transform duration-300 ease-premium group-hover:translate-x-1" />
+              <ArrowRight className="h-4 w-4" />
             </Button>
           </Reveal>
         </div>
@@ -53,26 +48,25 @@ export default function HomePage() {
         <ServicesGrid services={services} className="mt-14" />
       </Section>
 
-      <OurServicesList />
       <Structures />
+      <OurServicesList />
       <WhyUs />
       <Process />
       <UaeFocus />
       <International />
 
       {/* FAQs */}
-      <Section className="bg-white">
+      <Section className="bg-sand-100">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
             <SectionHeading
-              eyebrow="Common Questions"
-              title="Questions We Hear Most"
+              title="Questions we hear most"
               lead="If yours is not here, ask us directly and we will give you a straight answer, including when the answer is that we are not the right fit."
             />
           </div>
           <div className="lg:col-span-7 lg:col-start-6">
             <Reveal>
-              <Faq items={homeFaqs} />
+              <Faq items={homeFaqs} onTint />
             </Reveal>
           </div>
         </div>

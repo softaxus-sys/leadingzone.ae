@@ -1,6 +1,5 @@
 import { cn } from '@/lib/utils';
 
-/** Small uppercase label with a gold tick mark, used above section headings. */
 export function Eyebrow({
   children,
   className,
@@ -11,11 +10,13 @@ export function Eyebrow({
   onDark?: boolean;
 }) {
   return (
-    <span className={cn('lz-eyebrow', onDark && 'text-white', className)}>
-      <span
-        aria-hidden
-        className={cn('h-px w-7', onDark ? 'bg-white/70' : 'bg-gold-600/70')}
-      />
+    <span
+      className={cn(
+        'inline-block text-[13px] font-semibold',
+        onDark ? 'text-white/80' : 'text-gold-600',
+        className,
+      )}
+    >
       {children}
     </span>
   );

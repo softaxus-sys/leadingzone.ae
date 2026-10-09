@@ -14,20 +14,23 @@ export function Faq({
   items,
   className,
   defaultOpen = 0,
+  onTint = false,
 }: {
   items: FaqItem[];
   className?: string;
   /** Index to open on load; pass `-1` for all closed. */
   defaultOpen?: number;
+  /** Use white rows when the surrounding section is tinted. */
+  onTint?: boolean;
 }) {
   const [open, setOpen] = useState<number>(defaultOpen);
 
   return (
-    <div className={cn('divide-y divide-slateink-200 border-y border-slateink-200', className)}>
+    <div className={cn('space-y-3', className)}>
       {items.map((item, i) => {
         const isOpen = open === i;
         return (
-          <div key={item.q}>
+          <div key={item.q} className={cn('rounded-2xl px-6 sm:px-7', onTint ? 'bg-white' : 'bg-sand-100')}>
             <h3>
               <button
                 type="button"
@@ -35,12 +38,11 @@ export function Faq({
                 aria-expanded={isOpen}
                 aria-controls={`faq-panel-${i}`}
                 id={`faq-trigger-${i}`}
-                className="group flex w-full items-start justify-between gap-6 py-6 text-left"
+                className="group flex w-full items-start justify-between gap-6 py-5 text-left"
               >
                 <span
                   className={cn(
-                    'text-[16.5px] font-semibold leading-snug transition-colors duration-300',
-                    isOpen ? 'text-navy-900' : 'text-slateink-700 group-hover:text-navy-900',
+                    'text-[16.5px] font-semibold leading-snug text-navy-900',
                   )}
                 >
                   {item.q}
@@ -48,10 +50,8 @@ export function Faq({
                 <span
                   aria-hidden
                   className={cn(
-                    'mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border transition-all duration-300 ease-premium',
-                    isOpen
-                      ? 'rotate-45 border-gold-500 bg-gold-500 text-white'
-                      : 'border-slateink-200 text-slateink-500 group-hover:border-gold-500/60 group-hover:text-gold-700',
+                    'mt-0.5 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-all duration-300 ease-premium',
+                    isOpen ? 'rotate-45 bg-gold-600 text-white' : 'bg-white text-navy-900',
                   )}
                 >
                   <Plus className="h-3.5 w-3.5" strokeWidth={2.5} />
@@ -76,7 +76,7 @@ export function Faq({
               )}
             >
               <div className="overflow-hidden" inert={!isOpen}>
-                <p className="max-w-prose pb-7 pr-10 text-[15px] leading-relaxed text-slateink-500">
+                <p className="max-w-prose pb-6 pr-10 text-[15px] leading-relaxed text-slateink-500">
                   {item.a}
                 </p>
               </div>
