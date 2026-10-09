@@ -118,12 +118,15 @@ export default function AboutPage() {
 
           <div className="lg:col-span-5 lg:col-start-8">
             <Reveal delay={140}>
-              <div className="rounded-3xl bg-navy-950 p-9 sm:p-10">
-                <p className="text-[22px] font-medium leading-snug text-white">
-                  We would rather lose a sale than sell you a structure that will not do
-                  what you need it to.
-                </p>
-              </div>
+              <img
+                src="/images/consultation-meeting.jpg"
+                alt="Consultants meeting a client in an office"
+                width={1400}
+                height={787}
+                loading="lazy"
+                decoding="async"
+                className="aspect-[4/3] w-full rounded-3xl object-cover"
+              />
             </Reveal>
           </div>
         </div>
@@ -131,23 +134,38 @@ export default function AboutPage() {
 
       {/* Business setup in the UAE */}
       <Section className="bg-sand-100">
-        <SectionHeading title="Why set up a company in Dubai" />
-        <Reveal delay={80} className="mt-8 max-w-prose space-y-5">
-          <p className="text-[16.5px] leading-relaxed text-slateink-700">
-            There is no denying that Dubai is one of the top corporate business centers
-            in the globe. The Dubai government is particularly interested in and
-            supportive of the emirate&rsquo;s development for a fast-paced corporate
-            structure, offering advantageous company creation and opportunities for many
-            types of business structures across industries. The government
-            enthusiastically welcomes entrepreneurs from all over the world.
-          </p>
-          <p className="text-[16.5px] leading-relaxed text-slateink-700">
-            Starting a business in Dubai requires a thorough grasp of the optimal
-            business structure, which might be a Dubai Mainland company, a Freezone
-            company, or an offshore company. You must then select the appropriate type
-            of corporation, licence, and business activities to provide.
-          </p>
-        </Reveal>
+        <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-7">
+            <SectionHeading title="Why set up a company in Dubai" />
+            <Reveal delay={80} className="mt-8 max-w-prose space-y-5">
+              <p className="text-[16.5px] leading-relaxed text-slateink-700">
+                There is no denying that Dubai is one of the top corporate business centers
+                in the globe. The Dubai government is particularly interested in and
+                supportive of the emirate&rsquo;s development for a fast-paced corporate
+                structure, offering advantageous company creation and opportunities for many
+                types of business structures across industries. The government
+                enthusiastically welcomes entrepreneurs from all over the world.
+              </p>
+              <p className="text-[16.5px] leading-relaxed text-slateink-700">
+                Starting a business in Dubai requires a thorough grasp of the optimal
+                business structure, which might be a Dubai Mainland company, a Freezone
+                company, or an offshore company. You must then select the appropriate type
+                of corporation, licence, and business activities to provide.
+              </p>
+            </Reveal>
+          </div>
+          <div className="lg:col-span-5">
+            <img
+              src="/images/dubai-towers.jpg"
+              alt="Towers reflected in the water at Jumeirah Lakes Towers, Dubai"
+              width={1400}
+              height={933}
+              loading="lazy"
+              decoding="async"
+              className="aspect-[4/3] w-full rounded-3xl object-cover"
+            />
+          </div>
+        </div>
       </Section>
 
       {/* Types of company setup */}

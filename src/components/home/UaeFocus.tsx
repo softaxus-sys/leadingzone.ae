@@ -20,6 +20,15 @@ export function UaeFocus() {
               <ArrowRight className="h-4 w-4" />
             </Button>
           </Reveal>
+          <img
+            src="/images/dubai-aerial.jpg"
+            alt="Aerial view of the Dubai business district"
+            width={1400}
+            height={933}
+            loading="lazy"
+            decoding="async"
+            className="mt-10 aspect-[4/3] w-full rounded-3xl object-cover"
+          />
         </div>
 
         <div className="lg:col-span-7">

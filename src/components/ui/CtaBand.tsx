@@ -17,7 +17,17 @@ export function CtaBand({
     <section className="bg-white py-16 sm:py-20">
       <Container>
         <Reveal>
-          <div className="rounded-3xl bg-navy-950 px-6 py-14 text-center sm:px-12 sm:py-16">
+          <div className="relative overflow-hidden rounded-3xl bg-navy-950 px-6 py-14 text-center sm:px-12 sm:py-20">
+            <img
+              src="/images/dubai-business-bay.jpg"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              className="absolute inset-0 h-full w-full object-cover object-[50%_40%] opacity-40"
+            />
+            <div className="absolute inset-0 bg-navy-950/60" />
+            <div className="relative">
             <h2 className="mx-auto max-w-2xl text-3xl font-semibold leading-tight tracking-[-0.015em] text-white sm:text-4xl">
               {title}
             </h2>
@@ -33,6 +43,7 @@ export function CtaBand({
                 <MessageCircle className="h-4 w-4" strokeWidth={2} />
                 WhatsApp {contact.whatsapp}
               </Button>
+            </div>
             </div>
           </div>
         </Reveal>
