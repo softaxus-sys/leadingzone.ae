@@ -670,3 +670,39 @@ export const serviceBySlug = (slug: string): Service | undefined =>
 
 export const setupServices = services.filter((s) => s.group === 'setup');
 export const corporateServices = services.filter((s) => s.group === 'corporate');
+
+/** Hero photography per service page (Unsplash, free under the Unsplash License). */
+export const serviceImages: Record<string, { src: string; alt: string }> = {
+  'company-formation': {
+    src: '/images/dubai-sunset-skyline.jpg',
+    alt: 'Dubai skyline at sunset across the water',
+  },
+  'free-zone-company-setup': {
+    src: '/images/palm-jumeirah.jpg',
+    alt: 'Aerial view of Palm Jumeirah and the coastline',
+  },
+  'offshore-company-setup': {
+    src: '/images/dubai-marina-night.jpg',
+    alt: 'Dubai Marina towers lit up at night',
+  },
+  'pro-services': {
+    src: '/images/documents-review.jpg',
+    alt: 'Two people reviewing documents at a table',
+  },
+  'vat-registration': {
+    src: '/images/tax-forms.jpg',
+    alt: 'Hands holding a tax form beside a calculator and laptop',
+  },
+  'corporate-tax': {
+    src: '/images/signing-documents.jpg',
+    alt: 'Colleagues reviewing and signing paperwork',
+  },
+  'bank-account-opening': {
+    src: '/images/dubai-towers.jpg',
+    alt: 'Glass towers reflected in the water at Jumeirah Lakes Towers',
+  },
+  'immigration-services': {
+    src: '/images/passport.jpg',
+    alt: 'A passport resting on boarding passes',
+  },
+};

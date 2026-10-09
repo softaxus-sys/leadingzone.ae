@@ -28,7 +28,7 @@ export function LegalLayout({
 
       <Section className="bg-white">
         <div className="mx-auto max-w-prose">
-          <p className="mb-10 text-[14px] font-medium text-slateink-500">
+          <p className="mb-10 border-b border-slateink-200 pb-6 text-[14px] font-medium text-slateink-500">
             Last updated: {updated}
           </p>
 

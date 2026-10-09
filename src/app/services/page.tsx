@@ -27,6 +27,7 @@ export default function ServicesPage() {
       <PageHero
         title="Everything You Need to Establish and Operate in the UAE"
         lead="Two halves of the same job: getting the company licensed correctly, and keeping it compliant and operational afterwards. We handle both."
+        image={{ src: '/images/dubai-aerial.jpg', alt: 'Aerial view of the Dubai business district' }}
         crumbs={[{ label: 'Services' }]}
       />
 

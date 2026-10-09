@@ -88,6 +88,7 @@ export default function AboutPage() {
       <PageHero
         title="A UAE Business Partner, Not a Licence Vendor"
         lead="LeadingZone is a private business setup and corporate services consultancy. We help entrepreneurs and companies establish in the UAE and stay compliant once they have."
+        image={{ src: '/images/burj-khalifa.jpg', alt: 'The Burj Khalifa rising above Downtown Dubai' }}
         crumbs={[{ label: 'About' }]}
       />
 

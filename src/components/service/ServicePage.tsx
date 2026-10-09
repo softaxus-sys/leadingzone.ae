@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/Button';
 import { Faq, FaqSchema } from '@/components/ui/Faq';
 import { CtaBand } from '@/components/ui/CtaBand';
 import { ServiceCard } from '@/components/home/ServicesGrid';
-import { serviceBySlug, type Service } from '@/content/services';
+import { serviceBySlug, serviceImages, type Service } from '@/content/services';
 import { contact } from '@/content/site';
 
 /**
@@ -32,6 +32,7 @@ export function ServicePage({
       <PageHero
         title={service.heroTitle}
         lead={service.heroLead}
+        image={serviceImages[service.slug]}
         crumbs={[
           { label: 'Services', href: '/services' },
           { label: service.title },

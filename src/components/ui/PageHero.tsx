@@ -10,12 +10,14 @@ export function PageHero({
   title,
   lead,
   crumbs = [],
+  image,
   children,
 }: {
   eyebrow?: string;
   title: string;
   lead?: string;
   crumbs?: Crumb[];
+  image?: { src: string; alt: string };
   children?: React.ReactNode;
 }) {
   return (
@@ -45,16 +47,31 @@ export function PageHero({
           </nav>
         ) : null}
 
-        <div className="max-w-3xl">
-          <h1 className="text-[2.2rem] font-semibold leading-[1.1] tracking-[-0.015em] sm:text-5xl">
-            {title}
-          </h1>
-          {lead ? (
-            <p className="mt-5 max-w-2xl text-[17px] leading-relaxed text-slateink-500">
-              {lead}
-            </p>
+        <div className={image ? 'grid items-center gap-10 lg:grid-cols-12 lg:gap-14' : undefined}>
+          <div className={image ? 'lg:col-span-7' : 'max-w-3xl'}>
+            <h1 className="text-[2.2rem] font-semibold leading-[1.1] tracking-[-0.015em] sm:text-5xl">
+              {title}
+            </h1>
+            {lead ? (
+              <p className="mt-5 max-w-2xl text-[17px] leading-relaxed text-slateink-500">
+                {lead}
+              </p>
+            ) : null}
+            {children}
+          </div>
+          {image ? (
+            <div className="lg:col-span-5">
+              <img
+                src={image.src}
+                alt={image.alt}
+                width={1400}
+                height={933}
+                fetchPriority="high"
+                decoding="async"
+                className="aspect-[4/3] w-full rounded-3xl object-cover"
+              />
+            </div>
           ) : null}
-          {children}
         </div>
       </Container>
     </section>

@@ -73,6 +73,7 @@ export default function ContactPage() {
       <PageHero
         title="Book a Free Consultation"
         lead="Tell us what you are planning and we will come back with the route, the requirements and a realistic cost, usually within one business day."
+        image={{ src: '/images/consultation-meeting.jpg', alt: 'Consultants meeting a client in an office' }}
         crumbs={[{ label: 'Contact' }]}
       />
 
@@ -131,7 +132,7 @@ export default function ContactPage() {
                   ))}
                 </ul>
 
-                <div className="mt-9">
+                <div className="mt-8 border-t border-slateink-200 pt-7">
                   <p className="inline-flex items-center gap-2 text-[15px] font-semibold text-navy-900">
                     <Clock className="h-3.5 w-3.5 text-gold-600" strokeWidth={2} />
                     Office hours

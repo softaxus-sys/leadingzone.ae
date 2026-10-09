@@ -106,7 +106,7 @@ export function Footer() {
         </div>
 
         {/* Disclosure: keeps the consultancy/authority distinction explicit. */}
-        <div className="py-6">
+        <div className="border-t border-white/10 py-6">
           <p className="max-w-4xl text-[12.5px] leading-relaxed text-white/60">
             {site.legalName} is an independent private consultancy providing business
             setup and corporate support services. We are not a government authority,
@@ -118,7 +118,7 @@ export function Footer() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-4 pb-8 pt-2 text-[12.5px] sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-4 border-t border-white/10 py-6 text-[12.5px] sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {year} {site.legalName}. All rights reserved.
           </p>
