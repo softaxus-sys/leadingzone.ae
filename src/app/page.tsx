@@ -7,6 +7,7 @@ import { Structures } from '@/components/home/Structures';
 import { WhyUs } from '@/components/home/WhyUs';
 import { Process } from '@/components/home/Process';
 import { UaeFocus } from '@/components/home/UaeFocus';
+import { VideoShowcase } from '@/components/home/VideoShowcase';
 import { International } from '@/components/home/International';
 import { Section } from '@/components/ui/Section';
 import { SectionHeading } from '@/components/ui/SectionHeading';
@@ -28,6 +29,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <VideoShowcase />
 
       {/* Services overview */}
       <Section id="services" className="bg-white">
