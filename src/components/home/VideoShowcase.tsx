@@ -8,8 +8,8 @@ export function VideoShowcase() {
     <Section className="bg-sand-100">
       <SectionHeading
         align="center"
-        title="See how LeadingZone works"
-        lead="A short introduction to who we are and how we help you set up and run a company in the UAE."
+        title="Launch your Dubai business with LeadingZone"
+        lead="Quick business setup, visa help and hassle-free corporate services. Contact us for a free consultation and current offers."
       />
       <Reveal className="mx-auto mt-12 max-w-4xl">
         <video
