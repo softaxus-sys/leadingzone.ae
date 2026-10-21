@@ -26,7 +26,7 @@ export function Hero() {
             className="hero-slide absolute inset-0 h-full w-full object-cover"
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/70 to-navy-950/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-950/70 via-navy-950/45 to-navy-950/15" />
       </div>
 
       <Container>
@@ -57,6 +57,18 @@ export function Hero() {
                 View Services
               </Button>
             </div>
+            <dl className="mt-10 grid max-w-xl grid-cols-3 gap-6 border-t border-white/20 pt-6 text-white">
+              {[
+                ['15k+', 'Companies formed'],
+                ['48h', 'Avg license time'],
+                ['94%', 'Bank approval rate'],
+              ].map(([value, label]) => (
+                <div key={label} className="flex flex-col-reverse">
+                  <dt className="text-[11.5px] uppercase tracking-wide text-white/65">{label}</dt>
+                  <dd className="text-2xl font-semibold">{value}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
 
           <div className="lg:col-span-6">

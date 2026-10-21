@@ -38,7 +38,7 @@ export function Packages() {
                 'relative flex flex-col rounded-3xl p-7',
                 pkg.featured
                   ? 'bg-navy-950 text-white shadow-xl'
-                  : 'border border-slateink-200 bg-white',
+                  : 'border border-gold-600 bg-white',
               )}
             >
               <span

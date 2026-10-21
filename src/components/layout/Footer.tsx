@@ -34,9 +34,7 @@ export function Footer() {
             <LogoFooter />
 
             <p className="mt-6 max-w-sm text-[14.5px] leading-relaxed text-white/75">
-              A private business setup and corporate services consultancy helping
-              entrepreneurs and companies establish and operate in the United Arab
-              Emirates.
+              Premium business setup consultancy in Dubai. DED licensed, ISO certified, and trusted by 15,000+ entrepreneurs from 100+ nationalities.
             </p>
 
             <ul className="mt-8 space-y-3.5 text-[14.5px]">
