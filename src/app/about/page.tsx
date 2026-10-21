@@ -4,6 +4,7 @@ import { Section } from '@/components/ui/Section';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Reveal } from '@/components/ui/Reveal';
 import { CtaBand } from '@/components/ui/CtaBand';
+import { WhyLeadingZone } from '@/components/about/WhyLeadingZone';
 import { WhyUs } from '@/components/home/WhyUs';
 import { International } from '@/components/home/International';
 import { Check, ShieldAlert } from 'lucide-react';
@@ -88,9 +89,11 @@ export default function AboutPage() {
       <PageHero
         title="A UAE Business Partner, Not a Licence Vendor"
         lead="LeadingZone is a private business setup and corporate services consultancy. We help entrepreneurs and companies establish in the UAE and stay compliant once they have."
-        image={{ src: '/images/burj-khalifa.jpg', alt: 'The Burj Khalifa rising above Downtown Dubai' }}
+        backdrop="/images/dubai-business-bay.jpg"
         crumbs={[{ label: 'About' }]}
       />
+
+      <WhyLeadingZone />
 
       {/* Positioning */}
       <Section className="bg-white">

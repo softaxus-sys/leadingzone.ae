@@ -272,3 +272,96 @@ export const homeFaqs: { q: string; a: string }[] = [
     a: 'No, and we would be cautious of any consultancy that does. Approvals sit with the relevant authority or bank. What we can do is make sure your application is complete, accurate and well presented, and tell you honestly where we think it is weak.',
   },
 ];
+
+/** Business setup packages shown in the homepage "Choose your launchpad" section. */
+export const setupPackages: {
+  badge: string;
+  name: string;
+  subtitle: string;
+  price: string;
+  icon: 'building' | 'globe' | 'pin';
+  points: string[];
+  featured?: boolean;
+}[] = [
+  {
+    badge: 'Best Value',
+    name: 'Dubai Mainland',
+    subtitle: 'Most Popular for Retail & Services',
+    price: 'AED 10,800',
+    icon: 'building',
+    featured: true,
+    points: [
+      'Business License (DED Approved)',
+      'Investor Visa Eligibility',
+      'Memorandum of Association (MOA)',
+      'Trade Name Approval',
+      'Local Service Agent (LSA) Support',
+      'Initial Approval & Activities',
+    ],
+  },
+  {
+    badge: 'Tax Free',
+    name: 'UAE Free Zone',
+    subtitle: '100% Ownership & Tax Benefits',
+    price: 'AED 5,999',
+    icon: 'globe',
+    points: [
+      'Incorporation Certificate',
+      'Company Stamp & Share Certificate',
+      'Bank Account Introduction',
+      'Flexi-Desk Lease Agreement',
+      'Trade Name Reservation',
+      'Zero Corporate Tax Setup',
+    ],
+  },
+  {
+    badge: 'Capital Zone',
+    name: 'Abu Dhabi Mainland',
+    subtitle: 'Capital Gateway & Government Contracts',
+    price: 'AED 8,500',
+    icon: 'pin',
+    points: [
+      'Virtual Office Address (12 Months)',
+      'License Fee Included',
+      'Professional Service Fee',
+      'MOA & Legal Documentation',
+      'Chamber of Commerce Registration',
+      'DED Abu Dhabi Approval',
+    ],
+  },
+];
+
+/** Free zone and government partners shown in the homepage logo marquee. */
+export const partners: { name: string; logo: string }[] = [
+  { name: 'IFZA', logo: '/partners/ifza.png' },
+  { name: 'DIFC', logo: '/partners/difc.png' },
+  { name: 'Meydan Free Zone', logo: '/partners/meydan.png' },
+  { name: 'DMCC', logo: '/partners/dmcc.png' },
+  { name: 'JAFZA', logo: '/partners/jafza.png' },
+  { name: 'Ajman Free Zone', logo: '/partners/ajman-free-zone.png' },
+  { name: 'Sharjah Publishing City Free Zone', logo: '/partners/sharjah-publishing-city.png' },
+  { name: 'Abu Dhabi Department of Economic Development', logo: '/partners/abu-dhabi-ded.png' },
+  { name: 'Fujairah Free Zone', logo: '/partners/fujairah-free-zone.png' },
+];
+
+/** Client reviews shown in the homepage "Founders trust us" section. */
+export const reviews: { quote: string; name: string; role: string }[] = [
+  {
+    quote:
+      'Leading Zone got my license in 36 hours. Bank account in 6 days. Zero trips to government offices. Best AED 6,499 spent.',
+    name: 'Sarah Mitchell',
+    role: 'E-commerce, UK',
+  },
+  {
+    quote:
+      'Mainland setup with LSA was confusing until they structured it. Now I bid for government tenders. Professional and fast.',
+    name: 'Ahmed Al-Farsi',
+    role: 'Trading LLC, KSA',
+  },
+  {
+    quote:
+      'VAT, corporate tax, bookkeeping — all in one dashboard. They feel like an extension of our finance team, not a service provider.',
+    name: 'Priya Desai',
+    role: 'Consultancy, India',
+  },
+];

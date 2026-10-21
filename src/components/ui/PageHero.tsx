@@ -4,30 +4,48 @@ import { Container } from '@/components/ui/Container';
 
 export type Crumb = { label: string; href?: string };
 
-/** Shared header block for inner pages. */
+const DEFAULT_BACKDROP = '/images/dubai-business-bay.jpg';
+
+/** Shared header block for inner pages: full-bleed photo with white text. */
 export function PageHero({
-  eyebrow,
   title,
   lead,
   crumbs = [],
   image,
+  backdrop,
   children,
 }: {
   eyebrow?: string;
   title: string;
   lead?: string;
   crumbs?: Crumb[];
+  /** Photo shown behind the hero. */
   image?: { src: string; alt: string };
+  /** Same as `image`, as a bare path. */
+  backdrop?: string;
   children?: React.ReactNode;
 }) {
+  const src = backdrop ?? image?.src ?? DEFAULT_BACKDROP;
+
   return (
-    <section className="bg-sand-100 pb-14 pt-32 sm:pb-16 sm:pt-36">
+    <section className="relative isolate overflow-hidden bg-navy-950 pb-20 pt-32 text-white sm:pb-28 sm:pt-40">
+      <div className="absolute inset-0 -z-10" aria-hidden="true">
+        <img
+          src={src}
+          alt=""
+          fetchPriority="high"
+          decoding="async"
+          className="h-full w-full object-cover object-[50%_40%]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/70 to-navy-950/30" />
+      </div>
+
       <Container>
         {crumbs.length > 0 ? (
           <nav aria-label="Breadcrumb" className="mb-6">
-            <ol className="flex flex-wrap items-center gap-1.5 text-[13px] text-slateink-500">
+            <ol className="flex flex-wrap items-center gap-1.5 text-[13px] text-white/70">
               <li>
-                <Link href="/" className="transition-colors hover:text-navy-900">
+                <Link href="/" className="transition-colors hover:text-white">
                   Home
                 </Link>
               </li>
@@ -35,11 +53,11 @@ export function PageHero({
                 <li key={crumb.label} className="flex items-center gap-1.5">
                   <ChevronRight className="h-3 w-3" strokeWidth={2.5} />
                   {crumb.href ? (
-                    <Link href={crumb.href} className="transition-colors hover:text-navy-900">
+                    <Link href={crumb.href} className="transition-colors hover:text-white">
                       {crumb.label}
                     </Link>
                   ) : (
-                    <span className="text-navy-900">{crumb.label}</span>
+                    <span className="text-white">{crumb.label}</span>
                   )}
                 </li>
               ))}
@@ -47,31 +65,14 @@ export function PageHero({
           </nav>
         ) : null}
 
-        <div className={image ? 'grid items-center gap-10 lg:grid-cols-12 lg:gap-14' : undefined}>
-          <div className={image ? 'lg:col-span-7' : 'max-w-3xl'}>
-            <h1 className="text-[2.2rem] font-semibold leading-[1.1] tracking-[-0.015em] sm:text-5xl">
-              {title}
-            </h1>
-            {lead ? (
-              <p className="mt-5 max-w-2xl text-[17px] leading-relaxed text-slateink-500">
-                {lead}
-              </p>
-            ) : null}
-            {children}
-          </div>
-          {image ? (
-            <div className="lg:col-span-5">
-              <img
-                src={image.src}
-                alt={image.alt}
-                width={1400}
-                height={933}
-                fetchPriority="high"
-                decoding="async"
-                className="aspect-[4/3] w-full rounded-3xl object-cover"
-              />
-            </div>
+        <div className="max-w-3xl">
+          <h1 className="text-[2.2rem] font-semibold leading-[1.1] tracking-[-0.015em] !text-white sm:text-5xl">
+            {title}
+          </h1>
+          {lead ? (
+            <p className="mt-5 max-w-2xl text-[17px] leading-relaxed text-white/85">{lead}</p>
           ) : null}
+          {children}
         </div>
       </Container>
     </section>

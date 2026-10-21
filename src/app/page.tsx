@@ -3,11 +3,13 @@ import { ArrowRight } from 'lucide-react';
 import { Hero } from '@/components/home/Hero';
 import { OurServicesList } from '@/components/home/OurServicesList';
 import { ServicesGrid } from '@/components/home/ServicesGrid';
+import { Packages } from '@/components/home/Packages';
+import { Partners } from '@/components/home/Partners';
+import { Reviews } from '@/components/home/Reviews';
 import { Structures } from '@/components/home/Structures';
 import { WhyUs } from '@/components/home/WhyUs';
 import { Process } from '@/components/home/Process';
 import { UaeFocus } from '@/components/home/UaeFocus';
-import { VideoShowcase } from '@/components/home/VideoShowcase';
 import { International } from '@/components/home/International';
 import { Section } from '@/components/ui/Section';
 import { SectionHeading } from '@/components/ui/SectionHeading';
@@ -29,7 +31,8 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <VideoShowcase />
+      <Packages />
+      <Partners />
 
       {/* Services overview */}
       <Section id="services" className="bg-white">
@@ -56,6 +59,7 @@ export default function HomePage() {
       <Process />
       <UaeFocus />
       <International />
+      <Reviews />
 
       {/* FAQs */}
       <Section className="bg-sand-100">
