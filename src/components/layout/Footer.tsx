@@ -103,19 +103,6 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Disclosure: keeps the consultancy/authority distinction explicit. */}
-        <div className="border-t border-white/10 py-6">
-          <p className="max-w-4xl text-[12.5px] leading-relaxed text-white/60">
-            {site.legalName} is an independent private consultancy providing business
-            setup and corporate support services. We are not a government authority,
-            free zone authority, bank, law firm or licensed tax agent, and we do not
-            issue licences, visas or approvals. All applications are subject to the
-            decisions of the relevant authorities. Information on this website is
-            general in nature, may change, and should not be relied on as legal,
-            financial or tax advice.
-          </p>
-        </div>
-
         <div className="flex flex-col gap-4 border-t border-white/10 py-6 text-[12.5px] sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {year} {site.legalName}. All rights reserved.
