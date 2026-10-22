@@ -37,7 +37,7 @@ export function PageHero({
           decoding="async"
           className="h-full w-full object-cover object-[50%_40%]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/70 to-navy-950/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-950/70 via-navy-950/45 to-navy-950/15" />
       </div>
 
       <Container>
